@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even Calendar</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="public/template_admin/libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/jvectormap/jquery-jvectormap.css">
+	<link rel="stylesheet" href="public/template_admin/libs/eventcalendar/css/mobiscroll.javascript.min.css">
+	<link rel="stylesheet" href="public/template_admin/css/style.min.css">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  	<header class="main-header">
+	    <!-- Logo -->
+	    <a href="index2.html" class="logo">
+	      	<span class="logo-mini"><b>A</b>LT</span>
+	      	<span class="logo-lg"><b>Vuong</b>Tuan</span>
+	    </a>
+	    <!-- Header Navbar: style can be found in header.less -->
+	    <nav class="navbar navbar-static-top">
+	      	<!-- Sidebar toggle button-->
+	      	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"></a>
+
+	     	<div class="navbar-custom-menu">
+		        <ul class="nav navbar-nav">
+		          	<!-- Messages-->
+		          	<li class="dropdown messages-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-envelope-o"></i>
+			              	<span class="label label-success">4</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">Bạn có 6 tin nhắn</li>
+			              	<li>
+				                <ul class="menu">
+				                  	<li>
+				                    	<a href="#">
+				                      		<div class="pull-left">
+				                        		<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+				                      		</div>
+				                      		<h4>Support Team<small><i class="fa fa-clock-o"></i> 5 mins</small></h4>
+				                      		<p>Why not buy a new awesome theme?</p>
+				                    	</a>
+				                  </li>
+				                </ul>
+			              	</li>
+			              <li class="footer"><a href="#">See All Messages</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- Notifications -->
+		          	<li class="dropdown notifications-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-bell-o"></i>
+			              	<span class="label label-warning">10</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">Bạn có 10 thông báo</li>
+			              	<li>
+				                <ul class="menu">
+				                  	<li><a href="#"><i class="fa fa-users text-aqua"></i> 5 new members joined today</a></li>
+				                </ul>
+			              	</li>
+			              	<li class="footer"><a href="#">Xem tất cả</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- Tasks: style can be found in dropdown.less -->
+		          	<li class="dropdown tasks-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-flag-o"></i>
+			              	<span class="label label-danger">9</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">You have 9 tasks</li>
+			              	<li>
+				                <!-- inner menu: contains the actual data -->
+				                <ul class="menu">
+				                	<!-- Task item -->
+				                  	<li>
+					                    <a href="#">
+					                      	<h3>Design some buttons<small class="pull-right">20%</small></h3>
+					                      	<div class="progress xs">
+						                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">20% Complete</span></div>
+						                    </div>
+					                    </a>
+				                  	</li>
+				                  	<!-- end task item -->
+				                </ul>
+			              	</li>
+			              	<li class="footer"><a href="#">View all tasks</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- User Account -->
+		          	<li class="dropdown user user-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<img src="public/template_admin/img/user2-160x160.jpg" class="user-image" alt="User Image">
+			              	<span class="hidden-xs">Admin</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<!-- User image -->
+			              	<li class="user-header">
+			                	<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+			                	<p>Admin<small>Member since Nov. 2012</small></p>
+			              	</li>
+			              	<!-- Menu Body -->
+			              	<li class="user-body">
+				                <div class="row">
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Followers</a>
+				                  	</div>
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Sales</a>
+				                  	</div>
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Friends</a>
+				                  	</div>
+				                </div>
+			              	</li>
+			              	<li class="user-footer">
+				                <div class="pull-left">
+				                  	<a href="#" class="btn btn-default btn-flat">Profile</a>
+				                </div>
+				                <div class="pull-right">
+				                  	<a href="#" class="btn btn-default btn-flat">Sign out</a>
+				                </div>
+			              	</li>
+			            </ul>
+		          	</li>
+		          	<li>
+		            	<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+		          	</li>
+		        </ul>
+	      	</div>
+	      	<!-- End Sidebar toggle button-->
+	    </nav>
+  	</header>
+ 	<!-- Left side column. contains the logo and sidebar -->
+  	<aside class="main-sidebar">
+	    <!-- sidebar: style can be found in sidebar.less -->
+	    <section class="sidebar">
+	      	<!-- Sidebar user panel -->
+	      	<div class="user-panel">
+		        <div class="pull-left image">
+		          	<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+		        </div>
+		        <div class="pull-left info">
+		          	<p>Admin</p>
+		          	<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+		        </div>
+	      	</div>
+	      	<!-- search form -->
+	      	<form action="#" method="get" class="sidebar-form">
+		        <div class="input-group">
+		          	<input type="text" name="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+		            <span class="input-group-btn">
+		                <button type="submit" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+		            </span>
+		        </div>
+	      	</form>
+	      	<!-- /.search form -->
+	      <!-- sidebar menu: : style can be found in sidebar.less -->
+	      <ul class="sidebar-menu" data-widget="tree">
+	        <li>
+	          	<a href="dashboard.html">
+	            	<i class="fa fa-dashboard"></i> 
+	            	<span>Dashboard</span>
+	          	</a>
+	        </li>
+	        <li class="treeview">
+	          	<a href="javascript:;"><i class="fa fa-users"></i>
+	            	<span>Liên hệ</span>
+	              	<span class="label label-primary pull-right">4</span>
+	          	</a>
+	          	<ul class="treeview-menu">
+	            	<li><a href="#"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
+	            	<li><a href="contacts.html"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+	          	</ul>
+	        </li>
+	        <li class="active">
+	          	<a href="eventcalendar.html">
+		            <i class="fa fa-calendar"></i> <span>Event Calendar</span>
+		            <span class="pull-right-container">
+		              	<small class="label pull-right bg-red">3</small>
+		              	<small class="label pull-right bg-blue">17</small>
+		            </span>
+	          	</a>
+	        </li>
+	        <li class="active">
+	          	<a href="pipeline.html">
+		            <i class="fa fa-tasks"></i> <span>PipeLines</span>
+		            <span class="pull-right-container">
+		              	<small class="label pull-right bg-red">3</small>
+		            </span>
+	          	</a>
+	        </li>
+	        <li class="header">Settings</li>
+	        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Logs</span></a></li>
+	      </ul>
+	    </section>
+  	</aside>
+  	<!-- end Left side column. contains the logo and sidebar -->
+
+  	<!-- Content Wrapper. Contains page content -->
+  	<div class="content-wrapper">
+	    <!-- Title page -->
+	    <section class="content-header">
+	      	<h1>Calendar<small>Control panel</small></h1>
+	      	<ol class="breadcrumb">
+		        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+		        <li class="active">Calendar</li>
+	      	</ol>
+	    </section>
+	    <!-- End title page -->
+	    <!-- Main content -->
+	    <section class="content">
+	    	<div mbsc-page class="demo-create-read-update-delete-CRUD">
+			  	<div style="height:100%">
+			      <div id="demo-add-delete-event"></div>
+			    
+			    <div id="demo-add-popup">
+			        <div class="mbsc-form-group">
+			            <label>
+			                Title
+			                <input mbsc-input id="event-title">
+			            </label>
+			            <label>
+			                Description
+			                <textarea mbsc-textarea id="event-desc"></textarea>
+			            </label>
+			        </div>
+			        <div class="mbsc-form-group">
+			            <label for="event-all-day">
+			                All-day
+			                <input mbsc-switch id="event-all-day" type="checkbox" />
+			            </label>
+			            <label for="start-input">
+			                Starts
+			                <input mbsc-input id="start-input" />
+			            </label>
+			            <label for="end-input">
+			                Ends
+			                <input mbsc-input id="end-input" />
+			            </label>
+			            <div id="event-date"></div>
+			            <label>
+			                Show as busy
+			                <input id="event-status-busy" mbsc-segmented type="radio" name="event-status" value="busy">
+			            </label>
+			            <label>
+			                Show as free
+			                <input id="event-status-free" mbsc-segmented type="radio" name="event-status" value="free">
+			            </label>
+			            <div class="mbsc-button-group">
+			                <button class="mbsc-button-block" id="event-delete" mbsc-button data-color="danger" data-variant="outline">Delete event</button>
+			            </div>
+			        </div>
+			    </div>
+			  </div>
+			</div>
+	    </section>
+	    <!-- end main content -->
+  	</div>
+  	<!-- end content-wrapper -->
+  	<footer class="main-footer">
+	    <div class="pull-right hidden-xs"><b>Version</b> 2.4.0</div>
+    	<strong>Copyright &copy; VuongTuan.</strong> All rightsreserved.
+  	</footer>
+
+  	<!-- Control Sidebar Quick-->
+  	<aside class="control-sidebar control-sidebar-dark">
+	    <!-- Create the tabs -->
+	    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+	      	<li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+	      	<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+	    </ul>
+	    <div class="tab-content">
+	      	<div class="tab-pane" id="control-sidebar-home-tab">
+	        	<h3 class="control-sidebar-heading">Recent Activity</h3>
+		        <ul class="control-sidebar-menu">
+		          <li>
+		            <a href="javascript:void(0)">
+		              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+		              <div class="menu-info">
+		                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+		                <p>Will be 23 on April 24th</p>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+		              <div class="menu-info">
+		                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+		                <p>New phone +1(800)555-1234</p>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+		              <div class="menu-info">
+		                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+		                <p>nora@example.com</p>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+		              <div class="menu-info">
+		                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+		                <p>Execution time 5 seconds</p>
+		              </div>
+		            </a>
+		          </li>
+		        </ul>
+	        	<h3 class="control-sidebar-heading">Tasks Progress</h3>
+		        <ul class="control-sidebar-menu">
+		          <li>
+		            <a href="javascript:void(0)">
+		              <h4 class="control-sidebar-subheading">
+		                Custom Template Design
+		                <span class="label label-danger pull-right">70%</span>
+		              </h4>
+
+		              <div class="progress progress-xxs">
+		                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <h4 class="control-sidebar-subheading">
+		                Update Resume
+		                <span class="label label-success pull-right">95%</span>
+		              </h4>
+
+		              <div class="progress progress-xxs">
+		                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <h4 class="control-sidebar-subheading">
+		                Laravel Integration
+		                <span class="label label-warning pull-right">50%</span>
+		              </h4>
+
+		              <div class="progress progress-xxs">
+		                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+		              </div>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="javascript:void(0)">
+		              <h4 class="control-sidebar-subheading">
+		                Back End Framework
+		                <span class="label label-primary pull-right">68%</span>
+		              </h4>
+
+		              <div class="progress progress-xxs">
+		                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+		              </div>
+		            </a>
+		          </li>
+		        </ul>
+	      	</div>
+	      	<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+	      	<div class="tab-pane" id="control-sidebar-settings-tab">
+		        <form method="post">
+		          	<h3 class="control-sidebar-heading">General Settings</h3>
+		          	<div class="form-group">
+		            	<label class="control-sidebar-subheading">Report panel usage
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+		            	<p>Some information about this general settings option</p>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Allow mail redirect<input type="checkbox" class="pull-right" checked></label>
+			            <p>Other sets of options are available</p>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Expose author name in posts
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+			            <p>Allow the user to show his name in blog posts</p>
+		          	</div>
+		          	<h3 class="control-sidebar-heading">Chat Settings</h3>
+
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Show me as online
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Turn off notifications
+			              	<input type="checkbox" class="pull-right">
+			            </label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Delete chat history
+			              	<a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+			            </label>
+		          	</div>
+		        </form>
+		      </div>
+	    </div>
+  	</aside>
+  	<!-- end control-sidebar -->
+  	<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  	<div class="control-sidebar-bg"></div>
+</div>
+</body>
+	<script src="public/template_admin/libs/jquery/dist/jquery.min.js"></script>
+	<script src="public/template_admin/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="public/template_admin/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="public/template_admin/libs/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+	<script src="public/template_admin/libs/eventcalendar/js/mobiscroll.javascript.min.js"></script>
+	<script src="public/template_admin/js/adminlte.min.js"></script>
+	<script src="public/template_admin/js/demo.js"></script>
+	<script src="public/template_admin/js/main.min.js"></script>
+	<script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+	<script>
+
+    mobiscroll.setOptions({
+        locale: mobiscroll.localeEn,       // Specify language like: locale: mobiscroll.localePl or omit setting to use default
+        theme: 'ios',                      // Specify theme like: theme: 'ios' or omit setting to use default
+        themeVariant: 'light'              // More info about themeVariant: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-themeVariant
+    });
+    
+    var oldEvent,
+        tempEvent = {},
+        deleteEvent,
+        restoreEvent,
+        titleInput = document.getElementById('event-title'),
+        descriptionTextarea = document.getElementById('event-desc'),
+        allDaySwitch = document.getElementById('event-all-day'),
+        freeSegmented = document.getElementById('event-status-free'),
+        busySegmented = document.getElementById('event-status-busy'),
+        deleteButton = document.getElementById('event-delete'),
+        datePickerResponsive = {
+            medium: {
+                controls: ['calendar'],
+                touchUi: false
+            }
+        },
+        datetimePickerResponsive = {
+            medium: {
+                controls: ['calendar', 'time'],
+                touchUi: false
+            }
+        },
+        now = new Date(),
+        myData = [{
+            id: 1,
+            start: new Date(now.getFullYear(), now.getMonth(), 8, 13),
+            end: new Date(now.getFullYear(), now.getMonth(), 8, 13, 30),
+            title: 'Lunch @ Butcher\'s',
+            color: '#26c57d'
+        }, {
+            id: 2,
+            start: new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15),
+            end: new Date(now.getFullYear(), now.getMonth(), now.getDate(), 16),
+            title: 'General orientation',
+            color: '#fd966a'
+        }, {
+            id: 3,
+            start: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 18),
+            end: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 22),
+            title: 'Dexter BD',
+            color: '#37bbe4'
+        }, {
+            id: 4,
+            start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 10, 30),
+            end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 11, 30),
+            title: 'Stakeholder mtg.',
+            color: '#d00f0f'
+        }];
+    
+    function createAddPopup(elm) {
+        // hide delete button inside add popup
+        deleteButton.style.display = 'none';
+    
+        deleteEvent = true;
+        restoreEvent = false;
+    
+        // set popup header text and buttons for adding
+        popup.setOptions({
+            headerText: 'New event',       // More info about headerText: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-headerText
+            buttons: ['cancel', {          // More info about buttons: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-buttons
+                text: 'Add',
+                keyCode: 'enter',
+                handler: function () {
+                    calendar.updateEvent({
+                        id: tempEvent.id,
+                        title: tempEvent.title,
+                        description: tempEvent.description,
+                        allDay: tempEvent.allDay,
+                        start: tempEvent.start,
+                        end: tempEvent.end,
+                        color: tempEvent.color,
+                    });
+    
+                    // navigate the calendar to the correct view
+                    calendar.navigate(tempEvent.start);
+    
+                    deleteEvent = false;
+                    popup.close();
+                },
+                cssClass: 'mbsc-popup-button-primary'
+            }]
+        });
+    
+        // fill popup with a new event data
+        mobiscroll.getInst(titleInput).value = tempEvent.title;
+        mobiscroll.getInst(descriptionTextarea).value = '';
+        mobiscroll.getInst(allDaySwitch).checked = true;
+        range.setVal([tempEvent.start, tempEvent.end]);
+        mobiscroll.getInst(busySegmented).checked = true;
+        range.setOptions({ controls: ['date'], responsive: datePickerResponsive });
+    
+        // set anchor for the popup
+        popup.setOptions({ anchor: elm });
+    
+        popup.open();
+    }
+    
+    function createEditPopup(args) {
+        var ev = args.event;
+    
+        // show delete button inside edit popup
+        deleteButton.style.display = 'block';
+    
+        deleteEvent = false;
+        restoreEvent = true;
+    
+        // set popup header text and buttons for editing
+        popup.setOptions({
+            headerText: 'Edit event',      // More info about headerText: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-headerText
+            buttons: ['cancel', {          // More info about buttons: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-buttons
+                text: 'Save',
+                keyCode: 'enter',
+                handler: function () {
+                    var date = range.getVal();
+                    // update event with the new properties on save button click
+                    calendar.updateEvent({
+                        id: ev.id,
+                        title: titleInput.value,
+                        description: descriptionTextarea.value,
+                        allDay: mobiscroll.getInst(allDaySwitch).checked,
+                        start: date[0],
+                        end: date[1],
+                        free: mobiscroll.getInst(freeSegmented).checked,
+                        color: ev.color,
+                    });
+    
+                    // navigate the calendar to the correct view
+                    calendar.navigate(date[0]);;
+    
+                    restoreEvent = false;
+                    popup.close();
+                },
+                cssClass: 'mbsc-popup-button-primary'
+            }]
+        });
+    
+        // fill popup with the selected event data
+        mobiscroll.getInst(titleInput).value = ev.title || '';
+        mobiscroll.getInst(descriptionTextarea).value = ev.description || '';
+        mobiscroll.getInst(allDaySwitch).checked = ev.allDay || false;
+        range.setVal([ev.start, ev.end]);
+    
+        if (ev.free) {
+            mobiscroll.getInst(freeSegmented).checked = true;
+        } else {
+            mobiscroll.getInst(busySegmented).checked = true;
+        }
+    
+        // change range settings based on the allDay
+        range.setOptions({
+            controls: ev.allDay ? ['date'] : ['datetime'],
+            responsive: ev.allDay ? datePickerResponsive : datetimePickerResponsive
+        });
+    
+        // set anchor for the popup
+        popup.setOptions({ anchor: args.domEvent.currentTarget });
+        popup.open();
+    }
+    
+    var calendar = mobiscroll.eventcalendar('#demo-add-delete-event', {
+        clickToCreate: 'double',           // More info about clickToCreate: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-clickToCreate
+        dragToCreate: true,                // More info about dragToCreate: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-dragToCreate
+        dragToMove: true,                  // More info about dragToMove: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-dragToMove
+        dragToResize: true,                // More info about dragToResize: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-dragToResize
+        view: {                            // More info about view: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-view
+            calendar: { labels: true }
+        },
+        data: myData,                      // More info about data: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-data
+        onEventClick: function (args) {    // More info about onEventClick: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#event-onEventClick
+            oldEvent = { ...args.event };
+            tempEvent = args.event;
+    
+            if (!popup.isVisible()) {
+                createEditPopup(args);
+            }
+        },
+        onEventCreated: function (args) {  // More info about onEventCreated: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#event-onEventCreated
+            popup.close();
+            // store temporary event
+            tempEvent = args.event;
+            createAddPopup(args.target);
+        },
+        onEventDeleted: function () {      // More info about onEventDeleted: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#event-onEventDeleted
+            mobiscroll.snackbar({ 
+                button: {
+                    action: function () {
+                        calendar.addEvent(args.event);
+                    },
+                    text: 'Undo'
+                },
+                message: 'Event deleted'
+            });
+        }
+    });
+    
+    var popup = mobiscroll.popup('#demo-add-popup', {
+        display: 'bottom',                 // Specify display mode like: display: 'bottom' or omit setting to use default
+        contentPadding: false,
+        fullScreen: true,
+        onClose: function () {             // More info about onClose: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#event-onClose
+            if (deleteEvent) {
+                calendar.removeEvent(tempEvent);
+            } else if (restoreEvent) {
+                calendar.updateEvent(oldEvent);
+            }
+        },
+        responsive: {                      // More info about responsive: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-responsive
+            medium: {
+                display: 'bubble',         // Specify display mode like: display: 'bottom' or omit setting to use default
+                width: 400,                // More info about width: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-width
+                fullScreen: false,
+                touchUi: false
+            }
+        }
+    });
+    
+    titleInput.addEventListener('input', function (ev) {
+        // update current event's title
+        tempEvent.title = ev.target.value;
+    });
+    
+    descriptionTextarea.addEventListener('change', function (ev) {
+        // update current event's title
+        tempEvent.description = ev.target.value;
+    });
+    
+    allDaySwitch.addEventListener('change', function () {
+        var checked = this.checked
+        // change range settings based on the allDay
+        range.setOptions({
+            controls: checked ? ['date'] : ['datetime'],
+            responsive: checked ? datePickerResponsive : datetimePickerResponsive
+        });
+    
+        // update current event's allDay property
+        tempEvent.allDay = checked;
+    });
+    
+    var range = mobiscroll.datepicker('#event-date', {
+        controls: ['date'],
+        select: 'range',
+        startInput: '#start-input',
+        endInput: '#end-input',
+        showRangeLabels: false,
+        touchUi: true,
+        responsive: datePickerResponsive,  // More info about responsive: https://docs.mobiscroll.com/5-3-0/javascript/eventcalendar#opt-responsive
+        onChange: function (args) {
+            var date = args.value;
+            // update event's start date
+            tempEvent.start = date[0];
+            tempEvent.end = date[1];
+        }
+    });
+    
+    document.querySelectorAll('input[name=event-status]').forEach(function (elm) {
+        elm.addEventListener('change', function () {
+            // update current event's free property
+            tempEvent.free = mobiscroll.getInst(freeSegmented).checked;
+        });
+    });
+    
+    deleteButton.addEventListener('click', function () {
+        // delete current event on button click
+        calendar.removeEvent(oldEvent);
+        popup.close();
+    
+        // save a local reference to the deleted event
+        var deletedEvent = tempEvent;
+    
+        mobiscroll.snackbar({ 
+            button: {
+                action: function () {
+                    calendar.addEvent(deletedEvent);
+                },
+                text: 'Undo'
+            },
+            message: 'Event deleted'
+        });
+    });
+</script>
+</html>

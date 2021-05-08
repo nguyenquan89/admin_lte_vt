@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts Admin</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="public/template_admin/libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="public/template_admin/libs/jvectormap/jquery-jvectormap.css">
+	<link rel="stylesheet" href="public/template_admin/css/style.min.css">
+	<link rel="stylesheet" href="public/template_admin/css/style_mobile.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  	<header class="main-header">
+	    <!-- Logo -->
+	    <a class="logo">
+	      	<span class="logo-mini"><b>A</b>LT</span>
+	      	<span class="logo-lg"><b>Vuong</b>Tuan</span>
+	    </a>
+	    <!-- Header Navbar: style can be found in header.less -->
+	    <nav class="navbar navbar-static-top">
+	      	<!-- Sidebar toggle button-->
+	      	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"></a>
+
+	     	<div class="navbar-custom-menu">
+		        <ul class="nav navbar-nav">
+		          	<!-- Messages-->
+		          	<li class="dropdown messages-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-envelope-o"></i>
+			              	<span class="label label-success">4</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">Bạn có 6 tin nhắn</li>
+			              	<li>
+				                <ul class="menu">
+				                  	<li>
+				                    	<a href="#">
+				                      		<div class="pull-left">
+				                        		<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+				                      		</div>
+				                      		<h4>Support Team<small><i class="fa fa-clock-o"></i> 5 mins</small></h4>
+				                      		<p>Why not buy a new awesome theme?</p>
+				                    	</a>
+				                  </li>
+				                </ul>
+			              	</li>
+			              <li class="footer"><a href="#">See All Messages</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- Notifications -->
+		          	<li class="dropdown notifications-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-bell-o"></i>
+			              	<span class="label label-warning">10</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">Bạn có 10 thông báo</li>
+			              	<li>
+				                <ul class="menu">
+				                  	<li><a href="#"><i class="fa fa-users text-aqua"></i> 5 new members joined today</a></li>
+				                </ul>
+			              	</li>
+			              	<li class="footer"><a href="#">Xem tất cả</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- Tasks: style can be found in dropdown.less -->
+		          	<li class="dropdown tasks-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<i class="fa fa-flag-o"></i>
+			              	<span class="label label-danger">9</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<li class="header">You have 9 tasks</li>
+			              	<li>
+				                <!-- inner menu: contains the actual data -->
+				                <ul class="menu">
+				                	<!-- Task item -->
+				                  	<li>
+					                    <a href="#">
+					                      	<h3>Design some buttons<small class="pull-right">20%</small></h3>
+					                      	<div class="progress xs">
+						                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">20% Complete</span></div>
+						                    </div>
+					                    </a>
+				                  	</li>
+				                  	<!-- end task item -->
+				                </ul>
+			              	</li>
+			              	<li class="footer"><a href="#">View all tasks</a></li>
+			            </ul>
+		          	</li>
+		          	<!-- User Account -->
+		          	<li class="dropdown user user-menu">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			              	<img src="public/template_admin/img/user2-160x160.jpg" class="user-image" alt="User Image">
+			              	<span class="hidden-xs">Admin</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			              	<!-- User image -->
+			              	<li class="user-header">
+			                	<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+			                	<p>Admin<small>Member since Nov. 2012</small></p>
+			              	</li>
+			              	<!-- Menu Body -->
+			              	<li class="user-body">
+				                <div class="row">
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Followers</a>
+				                  	</div>
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Sales</a>
+				                  	</div>
+				                  	<div class="col-xs-4 text-center">
+				                    	<a href="#">Friends</a>
+				                  	</div>
+				                </div>
+			              	</li>
+			              	<li class="user-footer">
+				                <div class="pull-left">
+				                  	<a href="#" class="btn btn-default btn-flat">Profile</a>
+				                </div>
+				                <div class="pull-right">
+				                  	<a href="#" class="btn btn-default btn-flat">Sign out</a>
+				                </div>
+			              	</li>
+			            </ul>
+		          	</li>
+		          	<li>
+		            	<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+		          	</li>
+		        </ul>
+	      	</div>
+	      	<!-- End Sidebar toggle button-->
+	    </nav>
+  	</header>
+ 	<!-- Left side column. contains the logo and sidebar -->
+  	<aside class="main-sidebar">
+	    <!-- sidebar: style can be found in sidebar.less -->
+	    <section class="sidebar">
+	      	<!-- Sidebar user panel -->
+	      	<div class="user-panel">
+		        <div class="pull-left image">
+		          	<img src="public/template_admin/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+		        </div>
+		        <div class="pull-left info">
+		          	<p>Admin</p>
+		          	<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+		        </div>
+	      	</div>
+	      	<!-- search form -->
+	      	<form action="#" method="get" class="sidebar-form">
+		        <div class="input-group">
+		          	<input type="text" name="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+		            <span class="input-group-btn">
+		                <button type="submit" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+		            </span>
+		        </div>
+	      	</form>
+	      	<!-- /.search form -->
+	      <!-- sidebar menu: : style can be found in sidebar.less -->
+	      <ul class="sidebar-menu" data-widget="tree">
+	        <li>
+	          	<a href="dashboard.html">
+	            	<i class="fa fa-dashboard"></i> 
+	            	<span>Dashboard</span>
+	          	</a>
+	        </li>
+	        <li class="treeview">
+	          	<a href="javascript:;"><i class="fa fa-users"></i>
+	            	<span>Liên hệ</span>
+	              	<span class="label label-primary pull-right">4</span>
+	          	</a>
+	          	<ul class="treeview-menu">
+	            	<li><a href="#"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
+	            	<li><a href="contacts.html"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+	          	</ul>
+	        </li>
+	        <li class="active">
+	          	<a href="calendar.html">
+		            <i class="fa fa-calendar"></i> <span>Event Calendar</span>
+		            <span class="pull-right-container">
+		              	<small class="label pull-right bg-red">3</small>
+		              	<small class="label pull-right bg-blue">17</small>
+		            </span>
+	          	</a>
+	        </li>
+	        <li class="active">
+	          	<a href="pipeline.html">
+		            <i class="fa fa-tasks"></i> <span>PipeLines</span>
+		            <span class="pull-right-container">
+		              	<small class="label pull-right bg-red">3</small>
+		            </span>
+	          	</a>
+	        </li>
+	        <li class="header">Settings</li>
+	        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Logs</span></a></li>
+	      </ul>
+	    </section>
+  	</aside>
+  	<!-- end Left side column. contains the logo and sidebar -->
+
+  	<!-- Content Wrapper. Contains page content -->
+  	<div class="content-wrapper contacts">
+	    <!-- Title page -->
+	    <section class="content-header">
+	      	<h1>Danh sách liên hệ</h1>
+	      	<ol class="breadcrumb">
+	        	<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+	        	<li><a href="#">Liên hệ</a></li>
+	      	</ol>
+	    </section>
+	    <!-- End title page -->
+	    <!-- Main content -->
+	    <section class="content">
+	    	<div class="row">
+	    		<!-- LIST CONTACTS -->
+		        <div class="col-md-3 content-list">
+		        	<div class="nav-tabs-custom">
+			            <ul class="nav nav-tabs">
+			              <li class="active"><a href="#contacts" data-toggle="tab">Liên hệ</a></li>
+			              <li><a href="#contacts_list" data-toggle="tab">Danh sách</a></li>
+			              <li><a href="#companies" data-toggle="tab">Công ty</a></li>
+			            </ul>
+			            <div class="quick-tab custom-wrap custom-default">
+			            	<div class="quick-tab__item quick-tab__action">
+			            		<div class="btn-group custom-wrap">
+				                  	<button type="button" class="btn btn-info">Action</button>
+				                  	<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					                    <span class="caret"></span>
+				                  	</button>
+					                <ul class="dropdown-menu" role="menu">
+					                    <li><a href="#">Action</a></li>
+					                    <li><a href="#">Another action</a></li>
+					                    <li><a href="#">Something else here</a></li>
+					                    <li class="divider"></li>
+					                    <li><a href="#">Separated link</a></li>
+					                </ul>
+				                </div>
+			            	</div>
+			            	<div class="quick-tab__item quick-tab__search">
+			            		<div class="btn-group custom-wrap">
+				                  	<button type="button" class="btn btn-danger">QuickSearch</button>
+				                  	<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+					                    <span class="caret"></span>
+					                 </button>
+				                  	<ul class="dropdown-menu" role="menu">
+					                    <li><a href="#">Action</a></li>
+					                    <li><a href="#">Another action</a></li>
+					                    <li><a href="#">Something else here</a></li>
+					                    <li class="divider"></li>
+					                    <li><a href="#">Separated link</a></li>
+				                  	</ul>
+				                </div>
+			            	</div>
+			            </div>
+			            <div class="tab-content">
+			            	<div class="active tab-pane" id="contacts">
+			            		<div class="contacts-custom custom-wrap custom-default">
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<!-- mobile thêm data-toggle="modal" data-target="#contact-show-mobile" để hiển thị popup -->
+			            			<div class="item-contact custom-wrap" data-show_contact="2" data-toggle="modal" data-target="#contact-show-mobile">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-success wow">
+		        								<i class="fa fa-circle"></i>
+		        								<span>wow</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<!-- mobile thêm data-toggle="modal" data-target="#contact-show-mobile" để hiển thị popup -->
+			            			<div class="item-contact custom-wrap" data-show_contact="2" data-toggle="modal" data-target="#contact-show-mobile">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-success wow">
+		        								<i class="fa fa-circle"></i>
+		        								<span>wow</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<!-- mobile thêm data-toggle="modal" data-target="#contact-show-mobile" để hiển thị popup -->
+			            			<div class="item-contact custom-wrap" data-show_contact="2" data-toggle="modal" data-target="#contact-show-mobile">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-success wow">
+		        								<i class="fa fa-circle"></i>
+		        								<span>wow</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<!-- mobile thêm data-toggle="modal" data-target="#contact-show-mobile" để hiển thị popup -->
+			            			<div class="item-contact custom-wrap" data-show_contact="2" data-toggle="modal" data-target="#contact-show-mobile">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-success wow">
+		        								<i class="fa fa-circle"></i>
+		        								<span>wow</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            			<div class="item-contact custom-wrap" data-show_contact="1">
+			            				<div class="item-contact__image">
+			            					<div class="image">
+			            						<img src="public/template_admin/img/user2-160x160.jpg" alt="">
+			            					</div>
+			            				</div>
+			            				<div class="item-contact__info">
+			            					<h4 class="info-name">Nguyễn Quân</h4>
+			            					<div class="info-other">
+			            						<p class="mail">info@gmail.com</p>
+			            						<p class="add-time">Feb 25, 2021</p>
+			            					</div>
+			            				</div>
+			            				<div class="custom-status">
+		        							<label class="btn-info cold">
+		        								<i class="fa fa-circle"></i>
+		        								<span>Lạnh</span>
+		        							</label>
+		        						</div>
+			            			</div>
+			            		</div>
+			            	</div>
+			            	<div class="tab-pane custom-wrap custom-default" id="contacts_list">
+			            	</div>
+			            	<div class="tab-pane companies-custom custom-wrap custom-default" id="companies">
+			            		<div class="item-company">
+			            			<div class="item-company__name">Công ty TNHH TM & DV ABC</div>
+			            			<div class="item-company__info">
+			            				<p class="text"><i class="fa fa-mobile"></i>19001688</p>
+			            				<p class="text"><i class="fa fa-envelope-o"></i>info@gmail.com</p>
+			            				<p class="text"><i class="fa fa-map-marker"></i>CT2, KĐT Mễ Trì Thượng, Nam Từ Liên, HN</p>
+			            			</div>
+			            		</div>
+			            		<div class="item-company" data-toggle="modal" data-target="#contact-show-mobile">
+			            			<div class="item-company__name">Công ty TNHH TM & DV ABC</div>
+			            			<div class="item-company__info">
+			            				<p class="text"><i class="fa fa-mobile"></i>19001688</p>
+			            				<p class="text"><i class="fa fa-envelope-o"></i>info@gmail.com</p>
+			            				<p class="text"><i class="fa fa-map-marker"></i>CT2, KĐT Mễ Trì Thượng, Nam Từ Liên, HN</p>
+			            			</div>
+			            		</div>
+			            		<div class="item-company" data-toggle="modal" data-target="#contact-show-mobile">
+			            			<div class="item-company__name">Công ty TNHH TM & DV ABC</div>
+			            			<div class="item-company__info">
+			            				<p class="text"><i class="fa fa-mobile"></i>19001688</p>
+			            				<p class="text"><i class="fa fa-envelope-o"></i>info@gmail.com</p>
+			            				<p class="text"><i class="fa fa-map-marker"></i>CT2, KĐT Mễ Trì Thượng, Nam Từ Liên, HN</p>
+			            			</div>
+			            		</div>
+			            	</div>
+			            </div>
+			        </div>
+		        </div>
+		        <!-- END LIST CONTACT -->
+		        <div class="col-md-9 content-main">
+		        	<div class="contacts-content box-active custom-wrap custom-default">
+		        		<div class="contacts-content__nav custom-wrap">
+		        			<div class="contacts-content__nav-image custom-wrap">
+		        				<div class="image">
+		        					<img src="public/template_admin/img/user2-160x160.jpg" alt="Admin">
+		        				</div>
+		        			</div>
+		        			<div class="contacts-content__nav-text custom-wrap">
+		        				<p>Pace loading works automatically on page</p>
+		        			</div>
+		        			<div class="contacts-content__nav-action custom-wrap">
+		        				<div class="action-content custom-wrap custom-default">
+		        					<div class="action-item add">
+		        						<button class="add-info" data-toggle="modal" data-target="#popup-add-contacts"><i class="fa fa-plus"></i>Add</button>
+		        					</div>
+		        					<div class="action-item import">
+		        						<button class="import-info" data-toggle="modal" data-target="#popup-add-import"><i class="fa fa-picture-o"></i>Import</button>
+		        					</div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        	</div>
+		        	<!-- BOX hiển thị khi xem chi tiết liên hệ -->
+		        	<div class="contacts-content contacts-content_1 box-hidden custom-wrap custom-default">
+		        		<div class="close-box-contacts" data-close_contacts="1">
+		        			<img src="public/template_admin/img/icon-close.png">
+		        		</div>
+		        		<div class="contacts-content__head custom-wrap">
+		        			<div class="head-top custom-wrap">
+		        				<div class="head-top__chose custom-status">
+        							<label class="btn-info cold">
+        								<input type="radio" name="status" value="0" checked>
+        								<span>Lạnh</span>
+        							</label>
+        							<label class="btn-warning warm">
+        								<input type="radio" name="status" value="1">
+        								<span>Ấm</span>
+        							</label>
+        							<label class="btn-danger hot">
+        								<input type="radio" name="status" value="2">
+        								<span>Nóng</span>
+        							</label>
+        							<label class="btn-success wow">
+        								<input type="radio" name="status" value="3">
+        								<span>wow</span>
+        							</label>
+        							<label class="btn-primary nomarl">
+        								<input type="radio" name="status" value="4">
+        								<span>None</span>
+        							</label>
+		        				</div>
+		        			</div>
+		        			<div class="head-info custom-wrap">
+		        				<p class="head-info__name">Admin</p>
+		        				<p class="head-info__email">info@gmail.com</p>
+		        				<p class="head-info__job">Software Engineer</p>
+		        				<p class="head-info__phone">1900.1688</p>
+		        			</div>
+		        			<div class="head-action custom-wrap">
+		        				<ul>
+		        					<ol>
+		        						<button class="btn bg-navy">
+		        							<i class="fa fa-file-archive-o"></i>
+			        						Ghi chú
+			        					</button>
+		        					</ol>
+		        					<ol>
+		        						<button class="btn bg-navy">
+		        							<i class="fa fa-sticky-note-o"></i>
+			        						Ghi chú
+			        					</button>
+		        					</ol>
+		        					<ol>
+		        						<button class="btn bg-navy">
+		        							<i class="fa fa-file-archive-o"></i>
+			        						Ghi chú
+			        					</button>
+		        					</ol>
+		        					<ol>
+		        						<button class="btn bg-navy contact-send-mail" data-toggle="modal" data-target="#contact-send-mail">
+		        							<i class="fa fa-envelope-o"></i>
+			        						Gửi mail
+			        					</button>
+		        					</ol>
+		        					<ol>
+		        						<div class="btn-group">
+						                  	<button type="button" class="btn btn-warning">
+							                  	<i class="fa fa-coffee"></i>Action
+							              	</button>
+						                  	<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						                    	<span class="caret"></span>
+						                    	<span class="sr-only"></span>
+						                  	</button>
+						                  	<ul class="dropdown-menu" role="menu">
+							                    <li><a href="#">Action</a></li>
+							                    <li><a href="#">Another action</a></li>
+							                    <li><a href="#">Something else here</a></li>
+							                    <li><a href="#">Separated link</a></li>
+						                  	</ul>
+						                </div>
+		        					</ol>
+		        				</ul>
+		        			</div>
+		        			<div class="head-action2 custom-wrap custom-default">
+		        				<div class="head-action2__content custom-wrap">
+		        					<a class="item btn btn-app" data-toggle="modal" data-target="#popup-add-contacts">
+		        						<i class="fa fa-pencil-square-o"></i>
+		        						<p>Update</p>
+		        					</a>
+		        					<a class="item btn btn-app">
+		        						<i class="fa fa-eye"></i>
+		        						<p>View</p>
+		        					</a>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="contacts-content__detail custom-wrap custom-default">
+		        			<div class="contacts-content__detail-title custom-wrap custom-default">
+		        				<div class="title-name custom-wrap">Contact activity</div>
+		        				<div class="title-chose">
+		        					<div class="title-chose__item"><img src="public/template_admin/img/svg/pause.svg"></div>
+		        					<div class="title-chose__item active"><img src="public/template_admin/img/svg/clock.svg"></div>
+		        				</div>
+		        			</div>
+		        			<ul class="timeline timeline-inverse custom-wrap">
+			                  	<!-- timeline time label -->
+			                  	<li class="time-label">
+			                        <span class="bg-red">
+			                          10 Feb. 2014
+			                        </span>
+			                  	</li>
+			                  	<!-- /.timeline-label -->
+			                  	<!-- timeline item -->
+			                  	<li class="custom-wrap">
+			                    	<i class="fa fa-envelope bg-blue" data-show_detail></i>
+				                    <div class="timeline-item">
+				                      <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+				                      <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+				                      <div class="timeline-body">
+				                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+				                        weebly ning heekya handango imeem plugg dopplr jibjab, movity
+				                        jajah plickers sifteo edmodo ifttt zimbra. Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+				                        weebly ning heekya handango imeem plugg dopplr jibjab, movity
+				                        jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+				                        quora plaxo ideeli hulu weebly balihoo...
+				                      </div>
+				                      <div class="timeline-footer">
+				                        <a class="btn btn-primary btn-xs">Read more</a>
+				                        <a class="btn btn-danger btn-xs">Delete</a>
+				                      </div>
+				                    </div>
+			                  	</li>
+			                  	<!-- END timeline item -->
+			                  	<!-- timeline item -->
+			                  	<li class="custom-wrap">
+				                    <i class="fa fa-user bg-aqua" data-show_detail></i>
+				                    <div class="timeline-item">
+				                      <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+				                      <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request
+				                      </h3>
+				                    </div>
+			                  	</li>
+			                  	<!-- END timeline item -->
+			                  	<!-- timeline item -->
+			                  	<li class="custom-wrap">
+				                    <i class="fa fa-comments bg-yellow" data-show_detail></i>
+				                    <div class="timeline-item">
+				                      	<span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+				                      	<h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+				                      	<div class="timeline-body">
+				                        	Take me to your leader!
+				                        	Switzerland is small and neutral!
+				                        	We are more like Germany, ambitious and misunderstood!
+				                      	</div>
+				                      	<div class="timeline-footer">
+				                        	<a class="btn btn-warning btn-flat btn-xs">View comment</a>
+				                      	</div>
+				                    </div>
+			                  	</li>
+			                  	<!-- END timeline item -->
+			                  	<!-- timeline time label -->
+			                  	<li class="time-label">
+			                        <span class="bg-green">
+			                          3 Jan. 2014
+			                        </span>
+			                  	</li>
+			                  	<!-- /.timeline-label -->
+			                  	<!-- timeline item -->
+			                  	<li class="custom-wrap">
+			                    	<i class="fa fa-camera bg-purple" data-show_detail></i>
+				                    <div class="timeline-item">
+				                      <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+				                      <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+				                      <div class="timeline-body">
+				                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+				                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+				                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+				                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+				                      </div>
+				                    </div>
+			                  	</li>
+			                  	<!-- END timeline item -->
+			                  	<li>
+			                    	<i class="fa fa-clock-o bg-gray"></i>
+			                  	</li>
+			                </ul>
+		        		</div>
+		        		<!-- Hết BOX hiển thị khi xem chi tiết liên hệ -->
+		        	</div>
+		        </div>
+		     </div>
+	    </section>
+	    <!-- end main content -->
+  	</div>
+  	<!-- end content-wrapper -->
+  	<footer class="main-footer">
+	    <div class="pull-right hidden-xs"><b>Version</b> 2.4.0</div>
+    	<strong>Copyright &copy; VuongTuan.</strong> All rightsreserved.
+  	</footer>
+
+  	<!-- Control Sidebar Quick-->
+  	<aside class="control-sidebar control-sidebar-dark">
+	    <!-- Create the tabs -->
+	    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+	      	<li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+	      	<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+	    </ul>
+	    <div class="tab-content">
+	      	<div class="tab-pane" id="control-sidebar-home-tab">
+	        	<h3 class="control-sidebar-heading">Recent Activity</h3>
+		        <ul class="control-sidebar-menu">
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+			              	<div class="menu-info">
+			                	<h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+			                	<p>Will be 23 on April 24th</p>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<i class="menu-icon fa fa-user bg-yellow"></i>
+			              	<div class="menu-info">
+			                	<h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+			                	<p>New phone +1(800)555-1234</p>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+			              	<div class="menu-info">
+			                	<h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+			                	<p>nora@example.com</p>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<i class="menu-icon fa fa-file-code-o bg-green"></i>
+			              	<div class="menu-info">
+			                	<h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+			                	<p>Execution time 5 seconds</p>
+			              	</div>
+			            </a>
+		          	</li>
+		        </ul>
+	        	<h3 class="control-sidebar-heading">Tasks Progress</h3>
+		        <ul class="control-sidebar-menu">
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<h4 class="control-sidebar-subheading">
+			                	Custom Template Design
+			                	<span class="label label-danger pull-right">70%</span>
+			              	</h4>
+			              	<div class="progress progress-xxs">
+			                	<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<h4 class="control-sidebar-subheading">
+			                	Update Resume
+			                	<span class="label label-success pull-right">95%</span>
+			              	</h4>
+			              	<div class="progress progress-xxs">
+			                	<div class="progress-bar progress-bar-success" style="width: 95%"></div>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<h4 class="control-sidebar-subheading">
+			                	Laravel Integration
+			                	<span class="label label-warning pull-right">50%</span>
+			              	</h4>
+			              	<div class="progress progress-xxs">
+			                	<div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+			              	</div>
+			            </a>
+		          	</li>
+		          	<li>
+			            <a href="javascript:void(0)">
+			              	<h4 class="control-sidebar-subheading">
+			                	Back End Framework
+			                	<span class="label label-primary pull-right">68%</span>
+			              	</h4>
+			              	<div class="progress progress-xxs">
+			                	<div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+			              	</div>
+			            </a>
+		          	</li>
+		        </ul>
+	      	</div>
+	      	<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+	      	<div class="tab-pane" id="control-sidebar-settings-tab">
+		        <form method="post">
+		          	<h3 class="control-sidebar-heading">General Settings</h3>
+		          	<div class="form-group">
+		            	<label class="control-sidebar-subheading">Report panel usage
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Allow mail redirect<input type="checkbox" class="pull-right" checked></label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Expose author name in posts
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+		          	</div>
+		          	<h3 class="control-sidebar-heading">Chat Settings</h3>
+
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Show me as online
+			              	<input type="checkbox" class="pull-right" checked>
+			            </label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Turn off notifications
+			              	<input type="checkbox" class="pull-right">
+			            </label>
+		          	</div>
+		          	<div class="form-group">
+			            <label class="control-sidebar-subheading">Delete chat history
+			              	<a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+			            </label>
+		          	</div>
+		        </form>
+		      </div>
+	    </div>
+  	</aside>
+  	<!-- end control-sidebar -->
+  	<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  	<div class="control-sidebar-bg"></div>
+
+  	<!-- Popup hiển thị form import file và tag -->
+  	<div class="modal fade" id="popup-add-import">
+  		<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Example import</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<form role="form" class="custom-wrap">
+		              	<div class="box-body custom-wrap">
+			                <div class="form-group">
+			                  	<select class="multipleSelect" multiple name="language">
+								    <option value="Bangladesh">Bangladesh</option>
+								    <option selected value="Barbados">Barbados</option>
+								    <option selected value="Belarus">Belarus</option>
+								    <option value="Belgium">Belgium</option>
+								</select>
+			                </div>
+			                <div class="form-group">
+			                  	<label for="exampleInputFile">Chọn File</label>
+			                  	<input type="file" id="exampleInputFile">
+			                  	<p class="help-block">File: .png .jpg .excell .word .pdf (Max-size: 2MB)</p>
+			                </div>
+			                <div class="checkbox">
+			                  	<label><input type="checkbox"> Check me out</label>
+			                </div>
+		              	</div>
+		              	<div class="form-group">
+		              		<button class="btn btn-primary">Submit</button>
+		              		<button class="btn btn-danger">Hủy</button>
+		              	</div>
+		            </form>
+	          	</div>
+	        </div>
+	    </div>
+  	</div>
+  	<!-- Popup hiển thị form add liên hệ -->
+  	<div class="modal fade" id="popup-add-contacts">
+  		<div class="modal-dialog">
+	        <div class="modal-content">
+	          	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	              	<div class="btn-action">
+		  				<div class="btn-action__item">
+		  					<button class="btn btn-primary">Lưu</button>
+		  				</div>
+		  				<div class="btn-action__item">
+		  					<button class="btn btn-danger" data-dismiss="modal" aria-label="Close">Hủy</button>
+		  				</div>
+		  			</div>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="head-top custom-wrap">
+        				<div class="head-top__chose custom-status">
+							<label class="btn-info cold">
+								<input type="radio" name="status" value="0" checked>
+								<span>Lạnh</span>
+							</label>
+							<label class="btn-warning warm">
+								<input type="radio" name="status" value="1">
+								<span>Ấm</span>
+							</label>
+							<label class="btn-danger hot">
+								<input type="radio" name="status" value="2">
+								<span>Nóng</span>
+							</label>
+							<label class="btn-success wow">
+								<input type="radio" name="status" value="3">
+								<span>wow</span>
+							</label>
+							<label class="btn-primary nomarl">
+								<input type="radio" name="status" value="4">
+								<span>None</span>
+							</label>
+        				</div>
+        			</div>
+	          		<form role="form" class="custom-wrap form">
+		              	<div class="box-body custom-wrap">
+			                <div class="form-label-group outline">
+								<input type="text" id="tt8" name="firstname" class="form-control shadow-none" placeholder="First Name" autocomplete="off">
+								<span><label for="tt8">First Name</label></span>
+							</div>
+			                <div class="form-label-group outline">
+								<input type="text" id="tt8" name="lastname" class="form-control shadow-none" placeholder="Last Name" autocomplete="off">
+								<span><label for="tt8">Last Name</label></span>
+							</div>
+							<div class="form-label-group outline">
+								<input type="text" id="tt8" name="email" class="form-control shadow-none" placeholder="Work Email" autocomplete="off">
+								<span><label for="tt8">Work Email</label></span>
+							</div>
+			                <div class="form-group">
+				                <select class="form-control select2" style="width: 100%;">
+				                  	<option selected="selected">Company</option>
+				                  	<option>Alaska</option>
+				                  	<option>California</option>
+				                  	<option>Delaware</option>
+				                  	<option>Tennessee</option>
+				                  	<option>Texas</option>
+				                  	<option>Washington</option>
+				                </select>
+			                </div>
+			                <div class="form-group custom-default">
+			                	<div class="form-group__item form-label-group outline">
+			                		<input type="text" id="tt8" name="phone" class="form-control shadow-none" placeholder="Phone" autocomplete="off">
+									<span><label for="tt8">Phone</label></span>
+			                	</div>
+			                	<div class="form-group__item">
+					                <select class="form-control select2">
+					                  	<option selected="selected">Type</option>
+					                  	<option>Mobile</option>
+					                  	<option>Fax</option>
+					                  	<option>Phone</option>
+					                </select>
+			                	</div>
+			                </div>
+			                <div class="form-label-group outline">
+								<textarea id="tt7" class="form-control shadow-none" name="content" placeholder="Add a note" rows="3"></textarea>
+								<span><label for="tt7">Add a note</label></span>
+							</div>
+			                <div class="checkbox">
+			                  	<label><input type="checkbox"> Check me out</label>
+			                </div>
+		              	</div>
+		            </form>
+	          	</div>
+	        </div>
+	    </div>
+  	</div>
+
+    <!-- pop up hiển thị thông tin liên hệ trên mobile -->
+    <div class="modal fade fixed-mobile" id="contact-show-mobile">
+      	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-body contacts-content custom-wrap custom-default">
+	        		<div class="close-box-contacts close" data-dismiss="modal" aria-label="Close" data-close_contacts="1">
+	        			<img src="public/template_admin/img/icon-close.png">
+	        		</div>
+	        		<div class="contacts-content__head custom-wrap">
+	        			<div class="head-top custom-wrap">
+	        				<div class="head-top__chose custom-status">
+    							<label class="btn-info cold">
+    								<input type="radio" name="status" value="0" checked>
+    								<span>Lạnh</span>
+    							</label>
+    							<label class="btn-warning warm">
+    								<input type="radio" name="status" value="1">
+    								<span>Ấm</span>
+    							</label>
+    							<label class="btn-danger hot">
+    								<input type="radio" name="status" value="2">
+    								<span>Nóng</span>
+    							</label>
+    							<label class="btn-success wow">
+    								<input type="radio" name="status" value="3">
+    								<span>wow</span>
+    							</label>
+    							<label class="btn-primary nomarl">
+    								<input type="radio" name="status" value="4">
+    								<span>None</span>
+    							</label>
+	        				</div>
+	        			</div>
+	        			<div class="head-info custom-wrap">
+	        				<p class="head-info__name">Admin</p>
+	        				<p class="head-info__email">info@gmail.com</p>
+	        				<p class="head-info__job">Software Engineer</p>
+	        				<p class="head-info__phone">1900.1688</p>
+	        			</div>
+	        			<div class="head-action custom-wrap">
+	        				<ul>
+	        					<ol>
+	        						<button class="btn bg-navy">
+	        							<i class="fa fa-file-archive-o"></i>
+		        						Ghi chú
+		        					</button>
+	        					</ol>
+	        					<ol>
+	        						<button class="btn bg-navy">
+	        							<i class="fa fa-sticky-note-o"></i>
+		        						Ghi chú
+		        					</button>
+	        					</ol>
+	        					<ol>
+	        						<button class="btn bg-navy">
+	        							<i class="fa fa-file-archive-o"></i>
+		        						Ghi chú
+		        					</button>
+	        					</ol>
+	        					<ol>
+	        						<button class="btn bg-navy contact-send-mail" data-toggle="modal" data-target="#contact-send-mail">
+	        							<i class="fa fa-envelope-o"></i>
+		        						Gửi mail
+		        					</button>
+	        					</ol>
+	        					<ol>
+	        						<div class="btn-group">
+					                  	<button type="button" class="btn btn-warning">
+						                  	<i class="fa fa-coffee"></i>Action
+						              	</button>
+					                  	<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					                    	<span class="caret"></span>
+					                    	<span class="sr-only"></span>
+					                  	</button>
+					                  	<ul class="dropdown-menu" role="menu">
+						                    <li><a href="#">Action</a></li>
+						                    <li><a href="#">Another action</a></li>
+						                    <li><a href="#">Something else here</a></li>
+						                    <li><a href="#">Separated link</a></li>
+					                  	</ul>
+					                </div>
+	        					</ol>
+	        				</ul>
+	        			</div>
+	        			<div class="head-action2 custom-wrap custom-default">
+	        				<div class="head-action2__content custom-wrap">
+	        					<a class="item btn btn-app" data-toggle="modal" data-target="#popup-add-contacts">
+	        						<i class="fa fa-pencil-square-o"></i>
+	        						<p>Update</p>
+	        					</a>
+	        					<a class="item btn btn-app">
+	        						<i class="fa fa-eye"></i>
+	        						<p>View</p>
+	        					</a>
+	        				</div>
+	        			</div>
+	        		</div>
+	        		<div class="contacts-content__detail custom-wrap custom-default">
+	        			<div class="contacts-content__detail-title custom-wrap custom-default">
+	        				<div class="title-name custom-wrap">Contact activity</div>
+	        				<div class="title-chose">
+	        					<span class=""><i class="fa fa-list-ul"></i></span>
+	        					<span class="active"><i class="fa fa-clock-o"></i></span>
+	        				</div>
+	        			</div>
+	        			<ul class="timeline timeline-inverse custom-wrap">
+		                  	<!-- timeline time label -->
+		                  	<li class="time-label">
+		                        <span class="bg-red">
+		                          10 Feb. 2014
+		                        </span>
+		                  	</li>
+		                  	<!-- /.timeline-label -->
+		                  	<!-- timeline item -->
+		                  	<li class="custom-wrap">
+		                    	<i class="fa fa-envelope bg-blue" data-show_detail></i>
+			                    <div class="timeline-item">
+			                      <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+			                      <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+			                      <div class="timeline-body">
+			                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+			                        weebly ning heekya handango imeem plugg dopplr jibjab, movity
+			                        jajah plickers sifteo edmodo ifttt zimbra. Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+			                        weebly ning heekya handango imeem plugg dopplr jibjab, movity
+			                        jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+			                        quora plaxo ideeli hulu weebly balihoo...
+			                      </div>
+			                      <div class="timeline-footer">
+			                        <a class="btn btn-primary btn-xs">Read more</a>
+			                        <a class="btn btn-danger btn-xs">Delete</a>
+			                      </div>
+			                    </div>
+		                  	</li>
+		                  	<!-- END timeline item -->
+		                  	<!-- timeline item -->
+		                  	<li class="custom-wrap">
+			                    <i class="fa fa-user bg-aqua" data-show_detail></i>
+			                    <div class="timeline-item">
+			                      <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+			                      <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request
+			                      </h3>
+			                    </div>
+		                  	</li>
+		                  	<!-- END timeline item -->
+		                  	<!-- timeline item -->
+		                  	<li class="custom-wrap">
+			                    <i class="fa fa-comments bg-yellow" data-show_detail></i>
+			                    <div class="timeline-item">
+			                      	<span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+			                      	<h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+			                      	<div class="timeline-body">
+			                        	Take me to your leader!
+			                        	Switzerland is small and neutral!
+			                        	We are more like Germany, ambitious and misunderstood!
+			                      	</div>
+			                      	<div class="timeline-footer">
+			                        	<a class="btn btn-warning btn-flat btn-xs">View comment</a>
+			                      	</div>
+			                    </div>
+		                  	</li>
+		                  	<!-- END timeline item -->
+		                  	<!-- timeline time label -->
+		                  	<li class="time-label">
+		                        <span class="bg-green">
+		                          3 Jan. 2014
+		                        </span>
+		                  	</li>
+		                  	<!-- /.timeline-label -->
+		                  	<!-- timeline item -->
+		                  	<li class="custom-wrap">
+		                    	<i class="fa fa-camera bg-purple" data-show_detail></i>
+			                    <div class="timeline-item">
+			                      <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+			                      <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+			                      <div class="timeline-body">
+			                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+			                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+			                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+			                        	<img src="http://placehold.it/150x100" alt="..." class="margin">
+			                      </div>
+			                    </div>
+		                  	</li>
+		                  	<!-- END timeline item -->
+		                  	<li>
+		                    	<i class="fa fa-clock-o bg-gray"></i>
+		                  	</li>
+		                </ul>
+	        		</div>
+	        		<!-- Hết BOX hiển thị khi xem chi tiết liên hệ -->
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	<!-- hết pop up hiển thị thông tin liên hệ trên mobile -->
+
+	<!-- Popup hiển thị form gửi mail -->
+  	<div class="modal fade" id="contact-send-mail">
+      	<div class="modal-dialog">
+	        <div class="modal-content">
+	          	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title"><i class="fa fa-paper-plane-o"></i>Send a mail</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-group">
+	                	<label for="exampleInputFile">To:</label>
+	                  	<input type="text" value="" data-role="tagsinput" class="form-mail">
+	                </div>
+	                <div class="form-group">
+	                	<label for="exampleInputFile">Subject:</label>
+	                  	<input type="text" value="" data-role="tagsinput" class="form-subject">
+	                </div>
+	          		<textarea id="mail-content" name="mail_content"></textarea>
+
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="modal-footer__action">
+	          			<ul class="action-ul">
+	          				<ol class="action-ul__ol"><i class="fa fa-paperclip"></i></ol>
+	          				<ol class="action-ul__ol"><i class="fa fa-calendar"></i></ol>
+	          				<ol class="action-ul__ol"><i class="fa fa-thumbs-o-up"></i></ol>
+	          				<ol class="action-ul__ol">
+	          					<i class="fa fa-file-text-o" data-box_info></i>
+	          					<div class="box-info-ol">
+	          						<div class="box-info-ol__content">
+	          							<p>Tin mới</p>
+	          							<p>Tin mới</p>
+	          							<p>Tin mới</p>
+	          							<p>Tin mới</p>
+	          							<p>Tin mới</p>
+	          						</div>
+	          						<div class="box-info-ol__name">
+	          							<p>Template Chose</p>
+	          						</div>
+	          					</div>
+	          				</ol>
+	          			</ul>
+	          		</div>
+	            	<button type="button" class="btn btn-primary">Send</button>
+	          	</div>
+	        </div>
+      	</div>
+    </div>
+</div>
+</body>
+	<script src="public/template_admin/libs/jquery/dist/jquery.min.js"></script>
+	<script src="public/template_admin/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+	<script src="public/template_admin/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="public/template_admin/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="public/template_admin/libs/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+	<script src="public/template_admin/js/select2.full.min.js"></script>
+	<script src="public/template_admin/libs/jquery.bpopup.min.js"></script>
+	<script src="public/template_admin/js/adminlte.min.js"></script>
+	<script src="public/template_admin/js/demo.js"></script>
+	<script src="public/template_admin/js/function.min.js"></script>
+	<script src="public/template_admin/js/main.min.js"></script>
+	<script>
+		$(document).ready(function() {
+            addTinyMCE('#mail-content',200);
+        });
+	</script>
+</html>

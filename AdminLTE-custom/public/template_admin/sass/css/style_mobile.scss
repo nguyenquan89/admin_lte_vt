@@ -1,0 +1,32 @@
+@media only screen and (min-width:0px) and (max-width:1169px) {
+	.fixed-mobile {
+		visibility: visible;
+		opacity: 1;
+	}
+	.box-hidden {
+		visibility: hidden;
+		opacity: 0;
+		display: none;
+	}
+	.content-wrapper {
+	  max-height: unset;
+	}
+	.content {
+		position: relative;
+		&-list {
+			margin-top: 190px;
+			width: unset!important;
+		}
+		&-main {
+			width: unset!important;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+@media only screen and (min-width:0px) and (max-width:450px) {
+
+}
