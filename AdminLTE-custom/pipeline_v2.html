@@ -956,7 +956,7 @@
 	          						Thêm vào thẻ
 	          					</div>
 	          					<div class="sitebar-content__add-content custom-wrap">
-	          						<div class="add-contact add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-contact add-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_user">
 	          							<div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
 	          							<div class="text">Contact</div>
 	          						</div>
@@ -964,19 +964,19 @@
 	          							<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
 	          							<div class="text">Nhãn</div>
 	          						</div>
-	          						<div class="add-job add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-job add-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_add_job">
 	          							<div class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></div>
 	          							<div class="text">Việc cần làm</div>
 	          						</div>
-	          						<div class="add-date add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-date add-sitebar-item custom-wrap custom-default"data-toggle="modal" data-target="#edit_deal_date">
 	          							<div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
 	          							<div class="text">Ngày</div>
 	          						</div>
-	          						<div class="add-file add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-file add-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_file_attach">
 	          							<div class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></div>
 	          							<div class="text">Đính kèm</div>
 	          						</div>
-	          						<div class="add-person add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-person add-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_user">
 	          							<div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
 	          							<div class="text">Người phụ trách</div>
 	          						</div>
@@ -987,11 +987,11 @@
 	          						Hành động
 	          					</div>
 	          					<div class="sitebar-content__action-content action custom-wrap">
-	          						<div class="action-remind action-sitebar-item custom-wrap custom-default">
+	          						<div class="action-remind action-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_remind">
 	          							<div class="icon"></div>
 	          							<div class="text">Nhắc việc</div>
 	          						</div>
-	          						<div class="action-move_copy action-sitebar-item custom-wrap custom-default">
+	          						<div class="action-move_copy action-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_move_copy">
 	          							<div class="icon"><i class="fa fa-arrows" aria-hidden="true"></i></div>
 	          							<div class="text">Di chuyển / Copy</div>
 	          						</div>
@@ -1086,6 +1086,221 @@
 	          	</div>
 	        </div>
       	</div>
+    </div>
+
+    <!-- Popup thêm cho v2 -->
+    <div class="modal fade" id="edit_deal_date">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Cập nhật ngày thực hiện</h4>
+	          	</div>
+	          	<div class="modal-body">
+	                <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save"><i class="fa fa-floppy-o"></i> Lưu</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
+    <div class="modal fade" id="edit_deal_remind">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Thiết lập nhắc việc</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-group">Chọn ngày & giờ</div>
+	                <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <select class="form-control deal_contact select2" style="width: 100%;">
+		                  	<option selected="selected">Không lặp lại</option>
+		                  	<option>Lặp lại</option>
+		                  	<option>Nhắc theo giờ</option>
+		                </select>
+	                </div>
+	                 <div class="form-group">
+		            	<div class="tick_1" data-check="1">
+		            		<i class="fa fa-square-o check" aria-hidden="true"></i>
+		            		Nhắc kể cả khi công việc đã hoàn thành
+		            	</div>
+	             	</div>
+	             	<div class="form-group">
+	             		<div class="tick_2" data-check="1">
+	             			<i class="fa fa-square-o check" aria-hidden="true"></i>
+	             			Nhắc tất cả người theo dõi trong công việc
+	             		</div>
+	             	</div>
+	             	<div class="form-group">
+	             		<p class="date-remind" style="color: #5cb85c;">20/09/2021 - 9:00 am</p>
+	             	</div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save"><i class="fa fa-floppy-o"></i> Lưu</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
+    <div class="modal fade" id="edit_deal_add_job">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Thêm mới công việc con</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-label-group outline">
+						<input type="number" id="tt8" name="deal_value" class="form-control deal_value shadow-none" placeholder="0" autocomplete="off">
+						<span><label for="tt8">Tên công việc</label></span>
+					</div>
+	          		<div class="form-group">
+						<textarea class="form-control notes custom-wrap" name="notes" placeholder="Mô tả công việc..." rows="3"></textarea>
+					</div>
+					<div class="form-group">
+		                <select class="form-control deal_contact select2" style="width: 100%;">
+		                  	<option selected="selected">Người thực hiện</option>
+		                  	<option>Alaska</option>
+		                  	<option>California</option>
+		                  	<option>Delaware</option>
+		                  	<option>Tennessee</option>
+		                  	<option>Texas</option>
+		                  	<option>Washington</option>
+		                </select>
+	                </div>
+	                <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <div class="input-group">
+		                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                	<input type="date" class="form-control">
+		                </div>
+		            </div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save">Tạo</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
+    <div class="modal fade" id="edit_deal_user">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Chọn thành viên hoặc người phụ trách</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-group contact-deal">
+      					<label class="custom-wrap">Thành viên của bảng</label>
+	                  	<select class="multipleSelect" multiple name="language">
+						    <option value="Bangladesh">Bangladesh</option>
+						    <option selected value="Barbados">Barbados</option>
+						    <option selected value="Belarus">Belarus</option>
+						    <option value="Belgium">Belgium</option>
+						</select>
+	                </div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
+    <div class="modal fade" id="edit_file_attach">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title"><i class="fa fa-paperclip"></i>Thêm file</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-group">
+	                  	<label for="exampleInputFile">Chọn file</label>
+	                  	<input type="file" id="exampleInputFile">
+	                  	<p class="help-block">Example block-level help text here.</p>
+	                </div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save">Thêm file</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
+
+    <div class="modal fade" id="edit_deal_move_copy">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title">Chọn đích đến</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="form-group">
+	          			<label>Pipeline</label>
+		                <select class="form-control deal_contact select2" style="width: 100%;">
+		                  	<option selected="selected">Pipeline 1</option>
+		                  	<option>Pipeline 1</option>
+		                  	<option>Pipeline 2</option>
+		                  	<option>Pipeline 3</option>
+		                </select>
+	                </div>
+	                <div class="form-group">
+	                	<label>Bảng</label>
+		                <select class="form-control deal_contact select2" style="width: 100%;">
+		                  	<option selected="selected">Table 2</option>
+		                  	<option>Table 1</option>
+		                  	<option>Table 2</option>
+		                  	<option>Table 3</option>
+		                </select>
+	                </div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save">Di chuyển</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
     </div>
 
     <div class="config-action-fullpage">
@@ -1354,7 +1569,20 @@
 						$(this).find('.item-attach_'+data_check_attach).remove();
 					}
 				});
-			})
+			});
+			//tick check popup remind
+			$('body').on('click', '*[data-check]', function(e){
+				data_check = $(this).attr('data-check');
+				if(data_check == 1) {
+					$(this).attr('data-check','0');
+					$(this).find('.check').removeClass('fa-square-o');
+					$(this).find('.check').addClass('fa-check-square-o');
+				}else {
+					$(this).attr('data-check','1');
+					$(this).find('.check').removeClass('fa-check-square-o');
+					$(this).find('.check').addClass('fa-square-o');
+				}
+			});
 		});
 	</script>
 </html>
