@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="public/template_admin/libs/Ionicons/css/ionicons.min.css">
 	<link rel="stylesheet" href="public/template_admin/libs/jvectormap/jquery-jvectormap.css">
 	<link rel="stylesheet" href="public/template_admin/css/style.min.css">
+	<!-- them vs -->
+	<link rel="stylesheet" type="text/css" href="public/template_admin/css/pippeline_v2/pipeline_v2.css">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -697,161 +699,334 @@
 	            	<h4 class="modal-title">Deal Detail</h4>
 	            	<div class="modal-header__delele"></div>
 	          	</div>
-	          	<div class="modal-body">
-	          		<div class="edit-deal__form custom-wrap">
-	          			<div class="edit-deal__form-namevalue custom-wrap custom-default">
-	          				<div class="edit-name form-label-group outline">
-								<input type="text" id="tt8" name="deal_name" class="form-control deal_name  shadow-none" value="Step 1" autocomplete="off">
-								<span><label for="tt8">Deal name</label></span>
-							</div>
-							<div class="edit-value form-label-group outline">
-								<input type="number" id="tt8" name="deal_value" class="form-control deal_value shadow-none" value="0" autocomplete="off">
-								<span><label for="tt8">Deal value (USD)</label></span>
-							</div>
-	          			</div>
-	          			<div class="edit-deal__form-info custom-wrap custom-default">
-	          				<p class="custom-wrap">Pipeline hiện tại: <span>Quản lý dự án (Project Pippeline)</span></p>
-	          				<p class="custom-wrap">Bảng hiện tại: <span>Step 1</span></p>
-	          				<a class="custom-wrap move_stage" data-move_stage="id-stage" >Move to next stage <i class="fa fa-long-arrow-right"></i></a>
-	          				<div class="form-move-stage">
-	          					<div class="form-move-stage__title">
-	          						Chọn đích đến
-	          						<a class="close-form-move-stage" title="close"><span aria-hidden="true">×</span></a>
-	          					</div>
-	          					<div class="form-move-stage__content">
-	          						<div class="form-group">
-	          							<label>Pipline</label>
-	          							<select class="form-control">
-	          								<option>No Name</option>
-	          								<option>Pipline 1</option>
-	          								<option>Pipline 2</option>
-	          							</select>
+	          	<div class="modal-body custom-wrap custom-default">
+	          		<div class="modal-body__content">
+	          			<div class="edit-deal__form custom-wrap">
+		          			<div class="edit-deal__form-namevalue custom-wrap custom-default">
+		          				<div class="edit-name form-label-group outline">
+									<input type="text" id="tt8" name="deal_name" class="form-control deal_name  shadow-none" value="Step 1" autocomplete="off">
+									<span><label for="tt8">Deal name</label></span>
+								</div>
+								<div class="edit-value form-label-group outline">
+									<input type="number" id="tt8" name="deal_value" class="form-control deal_value shadow-none" value="0" autocomplete="off">
+									<span><label for="tt8">Deal value (USD)</label></span>
+								</div>
+		          			</div>
+		          			<div class="edit-deal__form-information custom-wrap">
+		          				<div class="contact-person custom-wrap custom-default">
+		          					<div class="contacts">
+		          						<div class="contacts-title custom-wrap">
+		          							Contacts
+		          						</div>
+		          						<div class="contacts-list custom-wrap custom-default">
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          						</div>
+		          					</div>
+		          					<div class="persons">
+		          						<div class="persons-title custom-wrap">
+		          							Người phụ trách
+		          						</div>
+		          						<div class="persons-list custom-wrap custom-default">
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          							<div class="item">
+		          								<div class="item-image">
+		          									<img src="public/template_admin/img/avatar.png">
+		          								</div>
+		          							</div>
+		          						</div>
+		          					</div>
+		          					<div class="label-color top custom-wrap custom-default">
+	          							<div class="color" style="background: green;"></div>
 	          						</div>
-	          						<div class="form-group">
-	          							<label>Bảng</label>
-	          							<select class="form-control">
-	          								<option>No Name</option>
-	          								<option>Table 1</option>
-	          								<option>Table 2</option>
-	          							</select>
+		          				</div>
+		          				<div class="form-group top custom-wrap custom-default">
+		          					<label class="custom-wrap" style="font-size: 16px;">Ghi chú</label>
+									<textarea class="form-control top notes custom-wrap" name="notes" placeholder="Ghi chú..." rows="3" style="margin-top: 10px;"></textarea>
+								</div>
+								<div class="save-form custom-wrap custom-default">
+									<a class="save-edit-deal">
+										<i class="fa fa-floppy-o"></i>Lưu
+									</a>
+								</div>
+		          			</div>
+		          		</div>
+						<div class="edit-deal__task top custom-wrap">
+							<div class="item-task custom-wrap custom-default">
+								<div class="icon" data-check_task="1"><i class="fa fa-check-square-o check" aria-hidden="true"></i></div>
+								<div class="text">
+									<div class="text-title custom-wrap">
+										Việc con số 1
+									</div>
+									<div class="text-content custom-wrap">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+									</div>
+								</div>
+								<div class="action-task">
+									<div class="item-action remind"></div>
+									<div class="item-action edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+									<div class="item-action delete"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+								</div>
+							</div>
+							<div class="item-task custom-wrap custom-default">
+								<div class="icon" data-check_task="1"><i class="fa fa-check-square-o check" aria-hidden="true"></i></div>
+								<div class="text">
+									<div class="text-title custom-wrap">
+										Việc con số 1
+									</div>
+									<div class="text-content custom-wrap">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+									</div>
+								</div>
+								<div class="action-task">
+									<div class="item-action remind"></div>
+									<div class="item-action edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+									<div class="item-action delete"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+								</div>
+							</div>
+						</div>
+						<div class="edit-deal__attach top custom-wrap">
+							<div class="edit-deal__attach-title custom-wrap">
+								<i class="fa fa-paperclip" aria-hidden="true"></i>
+								Tệp tin đính kèm
+							</div>
+							<div class="edit-deal__attach-content custom-wrap wrap">
+								<div class="item-attach custom-wrap custom-default">
+									<div class="item-attach__image">
+										<div class="image">
+											<img src="public/template_admin/img/background/background-1.jpg">
+										</div>
+									</div>
+									<div class="item-attach__content">
+										<div class="name-file custom-wrap">ten-file.png</div>
+										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
+										<div class="desc-file custom-wrap">
+											<textarea class="desctiption-file">Bấm để hiệu chỉnh mô tả ...</textarea>
+										</div>
+										<div class="action-item custom-wrap custom-default">
+											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
+											<div class="list image-bg"><i class="fa fa-television" aria-hidden="true"></i>Bỏ hình bìa</div>
+											<div class="list delete"><i class="fa fa-trash-o" aria-hidden="true"></i>Xóa</div>
+											<div class="list comment"><i class="fa fa-comments-o" aria-hidden="true"></i>Comment</div>
+										</div>
+									</div>
+									<div class="check-attach" data-check_attach="1">
+										<i class="fa fa-check-square check" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="item-attach custom-wrap custom-default">
+									<div class="item-attach__image">
+										<div class="image">
+											<img src="public/template_admin/img/background/background-2.jpg">
+										</div>
+									</div>
+									<div class="item-attach__content">
+										<div class="name-file custom-wrap">ten-file.png</div>
+										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
+										<div class="desc-file custom-wrap">
+											<textarea class="desctiption-file">Bấm để hiệu chỉnh mô tả ...</textarea>
+										</div>
+										<div class="action-item custom-wrap custom-default">
+											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
+											<div class="list image-bg"><i class="fa fa-television" aria-hidden="true"></i>Bỏ hình bìa</div>
+											<div class="list delete"><i class="fa fa-trash-o" aria-hidden="true"></i>Xóa</div>
+											<div class="list comment"><i class="fa fa-comments-o" aria-hidden="true"></i>Comment</div>
+										</div>
+									</div>
+									<div class="check-attach" data-check_attach="1">
+										<i class="fa fa-check-square check" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="edit-deal__attach-general custom-wrap custom-default">
+								<div class="action-file-all download-all" data-download_all><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Download tất cả</div>
+								<div class="action-file-all select-all" data-select_all="1"><i class="fa fa-check-square" aria-hidden="true"></i>Chọn tất cả</div>
+								<div class="action-file-all unchecked-all" data-unchecked_all="1"><i class="fa fa-square-o" aria-hidden="true"></i>Bỏ chọn tất cả</div>
+								<div class="action-file-all delete-all" data-delete_all_select><i class="fa fa-trash-o" aria-hidden="true"></i>Xóa các tập tin đang chọn</div>
+							</div>
+						</div>
+						<div class="edit-deal__comments top custom-wrap">
+							<div class="comment-deals custom-wrap">
+								<div class="comment-deals__title custom-wrap">
+									<i class="fa fa-comments-o" aria-hidden="true"></i>
+									Comments
+								</div>
+								<div class="comment-deals__content top custom-wrap">
+									<div class="form-comments custom-wrap custom-default">
+										<div class="avatar">
+											<div class="avatar-image">
+												<img src="public/template_admin/img/avatar04.png">
+											</div>
+										</div>
+										<div class="form">
+											<textarea class="custom-wrap content-comment">Thêm mới comments</textarea>
+										</div>
+										<div class="action-form-comment custom-wrap custom-default">
+											<div class="btn-action">
+												<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+												Gửi comment
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="show-list-comment top custom-wrap">
+									<div class="list-comment custom-wrap">
+										<div class="item-comment custom-wrap custom-default">
+											<div class="avatar">
+												<div class="avatar-image">
+													<img src="public/template_admin/img/avatar04.png">
+												</div>
+											</div>
+											<div class="info">
+												<div class="info-content custom-wrap">
+													<div class="name-date custom-wrap custom-default">
+														<div class="name-date__item name">Nguyễn Quân</div>
+														<div class="name-date__item date">- Hôm nay, 11:30</div>
+													</div>
+													<div class="text custom-wrap custom-default">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item-comment custom-wrap custom-default">
+											<div class="avatar">
+												<div class="avatar-image">
+													<img src="public/template_admin/img/avatar04.png">
+												</div>
+											</div>
+											<div class="info">
+												<div class="info-content custom-wrap">
+													<div class="name-date custom-wrap custom-default">
+														<div class="name-date__item name">Nguyễn Quân</div>
+														<div class="name-date__item date">- Hôm nay, 11:30</div>
+													</div>
+													<div class="text custom-wrap custom-default">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	          		</div>
+	          		<div class="modal-body__sitebar">
+	          			<div class="sitebar-content custom-wrap custom-default">
+	          				<div class="sitebar-content__add custom-wrap">
+	          					<div class="sitebar-content__add-title custom-wrap">
+	          						Thêm vào thẻ
+	          					</div>
+	          					<div class="sitebar-content__add-content custom-wrap">
+	          						<div class="add-contact add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+	          							<div class="text">Contact</div>
+	          						</div>
+	          						<div class="add-label add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
+	          							<div class="text">Nhãn</div>
+	          						</div>
+	          						<div class="add-job add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+	          							<div class="text">Việc cần làm</div>
+	          						</div>
+	          						<div class="add-date add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+	          							<div class="text">Ngày</div>
+	          						</div>
+	          						<div class="add-file add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></div>
+	          							<div class="text">Đính kèm</div>
+	          						</div>
+	          						<div class="add-person add-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+	          							<div class="text">Người phụ trách</div>
 	          						</div>
 	          					</div>
-	          					<div class="form-move-stage__action">
-	          						<a class="btn-move-stage btn btn-success">Di chuyển</a>
+	          				</div>
+	          				<div class="sitebar-content__action custom-wrap">
+	          					<div class="sitebar-content__action-title custom-wrap">
+	          						Hành động
+	          					</div>
+	          					<div class="sitebar-content__action-content action custom-wrap">
+	          						<div class="action-remind action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"></div>
+	          							<div class="text">Nhắc việc</div>
+	          						</div>
+	          						<div class="action-move_copy action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-arrows" aria-hidden="true"></i></div>
+	          							<div class="text">Di chuyển / Copy</div>
+	          						</div>
+	          						<div class="action-save action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-inbox" aria-hidden="true"></i></div>
+	          							<div class="text">Lưu trữ</div>
+	          						</div>
+	          						<div class="action-delete_job action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+	          							<div class="text">Xóa công việc</div>
+	          						</div>
+	          						<div class="action-lock_task action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+	          							<div class="text">Khóa task</div>
+	          						</div>
+	          						<div class="action-vote action-sitebar-item custom-wrap custom-default">
+	          							<div class="icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+	          							<div class="text">Vote</div>
+	          						</div>
+	          					</div>
+	          				</div>
+	          				<div class="sitebar-content__general custom-wrap">
+	          					<div class="sitebar-content__general-content custom-wrap">
+	          						<div class="complete custom-wrap custom-default">
+	          							<div class="complete-icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+	          							<div class="complete-text">Hoàn thành</div>
+	          						</div>
+	          						<div class="enddate custom-wrap custom-default">
+	          							<div class="enddate-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+	          							<div class="enddate-text">Ngày hoàn thành</div>
+	          						</div>
 	          					</div>
 	          				</div>
 	          			</div>
-	          			<div class="edit-deal__form-information custom-wrap">
-	          				<div class="form-group contact-deal">
-	          					<label class="custom-wrap">Contact</label>
-			                  	<select class="multipleSelect" multiple name="language">
-								    <option value="Bangladesh">Bangladesh</option>
-								    <option selected value="Barbados">Barbados</option>
-								    <option selected value="Belarus">Belarus</option>
-								    <option value="Belgium">Belgium</option>
-								</select>
-			                </div>
-	          				<div class="form-group">
-	          					<label class="custom-wrap contact-job">Người phụ trách</label>
-			                  	<select class="multipleSelect" multiple name="language">
-								    <option value="Bangladesh">Bangladesh</option>
-								    <option selected value="Barbados">Barbados</option>
-								    <option selected value="Belarus">Belarus</option>
-								    <option value="Belgium">Belgium</option>
-								</select>
-			                </div>
-			                <div class="form-group">
-			                	<label class="custom-wrap">Ngày đến hạn</label>
-				                <div class="input-group">
-				                	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-				                	<input type="date" class="form-control">
-				                </div>
-				            </div>
-	          				<div class="form-group">
-	          					<label class="custom-wrap">Ghi chú</label>
-								<textarea class="form-control notes custom-wrap" name="notes" placeholder="Ghi chú..." rows="3"></textarea>
-							</div>
-	          			</div>
 	          		</div>
-					<div class="edit-deal__action">
-						<a class="btn btn-app" data-toggle="modal" data-target="#contact-send-mail">
-							<i class="fa fa-envelope-o"></i>
-							<p>Send Email</p>
-						</a>
-						<a class="btn btn-app save-edit-deal">
-							<i class="fa fa-floppy-o"></i>
-							<p>Lưu</p>
-						</a>
-					</div>
-	          	</div>
-	          	<div class="modal-footer deal-activity">
-	            	<div class="deal-activity__title">
-	            		<p>Deal activity</p>
-	            	</div>
-	            	<div class="deal-activity__content">
-	            		<div class="deal-activity__content-list">
-	            			<div class="list-title">
-	            				<p>Today</p>
-	            			</div>
-	            			<div class="list-content">
-	            				<ul class="custom-wrap">
-	            					<li class="custom-wrap custom-default">
-	            						<div class="icon">
-	            							
-	            						</div>
-	            						<div class="text">
-	            							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	            						</div>
-	            						<div class="time">
-	            							7:28 pm
-	            						</div>
-	            					</li>
-	            					<li class="custom-wrap custom-default">
-	            						<div class="icon">
-	            							
-	            						</div>
-	            						<div class="text">
-	            							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	            						</div>
-	            						<div class="time">
-	            							7:28 pm
-	            						</div>
-	            					</li>
-	            				</ul>
-	            			</div>
-	            		</div>
-	            		<div class="deal-activity__content-list">
-	            			<div class="list-title">
-	            				<p>yesterday</p>
-	            			</div>
-	            			<div class="list-content">
-	            				<ul class="custom-wrap">
-	            					<li class="custom-wrap custom-default">
-	            						<div class="icon">
-	            							
-	            						</div>
-	            						<div class="text">
-	            							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	            						</div>
-	            						<div class="time">
-	            							7:28 pm
-	            						</div>
-	            					</li>
-	            					<li class="custom-wrap custom-default">
-	            						<div class="icon">
-	            							
-	            						</div>
-	            						<div class="text">
-	            							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	            						</div>
-	            						<div class="time">
-	            							7:28 pm
-	            						</div>
-	            					</li>
-	            				</ul>
-	            			</div>
-	            		</div>
-	            	</div>
 	          	</div>
 	        </div>
       	</div>
@@ -1117,5 +1292,69 @@
 			$('.modal').find('.modal-header').find('.close').trigger('click');
 		})
 		//Hết nút xóa deal
+	</script>
+
+	<!-- js for v2 01/09/2021 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//tick check complete task
+			$('body').on('click', '*[data-check_task]', function(e){
+				data = $(this).attr("data-check_task");
+				if(data == 1) {
+					$(this).attr("data-check_task","0");
+					$(this).find('.check').removeClass('fa-check-square-o');
+					$(this).find('.check').addClass('fa-square-o');
+				}else {
+					$(this).attr("data-check_task","1");
+					$(this).find('.check').removeClass('fa-square-o');
+					$(this).find('.check').addClass('fa-check-square-o');
+				}
+			});
+			//tick check select file
+			$('body').on('click', '*[data-check_attach]', function(e){
+				data = $(this).attr("data-check_attach");
+				if(data == 1) {
+					$(this).attr('data-check_attach','0');
+					$(this).find('.check').removeClass('fa-check-square');
+					$(this).find('.check').addClass('fa-square-o');
+				}else {
+					$(this).attr('data-check_attach','1');
+					$(this).find('.check').removeClass('fa-square-o');
+					$(this).find('.check').addClass('fa-check-square');
+				}
+			});
+			// tick check select all file
+			$('body').on('click', '*[data-select_all]', function(e){
+				data = $(this).attr('data-select_all');
+				if(data == 1) {
+					$(this).closest('.edit-deal__attach').each(function(){
+						$('.item-attach').find('.check').removeClass('fa-square-o');
+						$('.item-attach').find('.check').addClass('fa-check-square');
+						$('.item-attach').find('.check-attach').attr('data-check_attach','0');
+					});
+				}
+			});
+			// uncheck all file
+			$('body').on('click', '*[data-unchecked_all]', function(e){
+				data = $(this).attr('data-unchecked_all');
+				if(data == 1) {
+					$(this).closest('.edit-deal__attach').each(function(){
+						$('.item-attach').find('.check').removeClass('fa-check-square');
+						$('.item-attach').find('.check').addClass('fa-square-o');
+						$('.item-attach').find('.check-attach').attr('data-check_attach','1');
+					});
+				}
+			});
+			// delete all file selected
+			$('body').on('click', '*[data-delete_all_select]', function(e){
+				$(this).closest('.edit-deal__attach').each(function(){
+					data_check_attach = $('.item-attach').find('.check-attach').attr('data-check_attach');
+					if(data_check_attach == 1) {
+						$('.item-attach').addClass('item-attach_'+data_check_attach);
+						$(this).find('.item-attach_'+data_check_attach).remove();
+					}
+				});
+			})
+		});
 	</script>
 </html>
