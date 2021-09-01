@@ -31,9 +31,6 @@ $color_main: #dd4b39;
 }
 // pipepine edit v2
 .edit-deal {
-	.modal-body {
-		margin-top: 10px;
-	}
 	.modal-content {
 		width: 800px;
 		border-radius: 5px;
@@ -47,6 +44,14 @@ $color_main: #dd4b39;
 		}
 		.modal-title {
 			padding: 0 35px;
+			.name-modal-edit {
+				width: 95%;
+				border: 1px solid #ddd;
+				outline: none;
+				font-size: 14px;
+				height: 35px;
+				padding-left: 10px;
+			}
 		}
 		.delete {
 			position: absolute;
@@ -59,6 +64,26 @@ $color_main: #dd4b39;
 	    	&:hover {
 	    		color: #cd0000;
 	    	}
+		}
+		.icon-edit {
+			position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    right: 50px;
+		    font-size: 20px;
+		    color: #3e3e3e;
+		    cursor: pointer;
+		    opacity: 0;
+		    visibility: hidden;
+		    transition: all 0.6s;
+		    z-index: 9999999;
+		    color: #5cb85c;
+		}
+		&:hover {
+			.icon-edit {
+				opacity: 1;
+		    	visibility: visible;
+			}
 		}
 	}
 	&__form {
@@ -463,6 +488,7 @@ $color_main: #dd4b39;
 		padding-left: 5px;
 		padding-right: 5px;
 		padding-bottom: 10px;
+		margin-top: 10px;
 		&__content {
 			width: calc(100% - 165px);
 			float: left;

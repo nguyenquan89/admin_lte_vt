@@ -698,6 +698,7 @@
 	              	<span aria-hidden="true">&times;</span></button>
 	            	<h4 class="modal-title">Deal Detail</h4>
 	            	<div class="modal-header__delele"></div>
+	            	<div class="icon-edit" data-edit_title_modal="1" title="Click để sửa"><i class="fa fa-pencil-square-o check" aria-hidden="true"></i></div>
 	          	</div>
 	          	<div class="modal-body custom-wrap custom-default">
 	          		<div class="modal-body__content">
@@ -1583,6 +1584,24 @@
 					$(this).find('.check').addClass('fa-square-o');
 				}
 			});
+			//edit title modal
+			$('body').on('click','*[data-edit_title_modal]', function(e){
+				var data = $(this).attr('data-edit_title_modal');
+				if(data == 1) {
+					title = $(this).closest('.modal-header').find('.modal-title').html();
+					input = '<input type="text" name="title_modal" value="'+title+'" class="name-modal-edit" />';
+					$(this).closest('.modal-header').find('.modal-title').html(input);
+					$(this).attr('data-edit_title_modal','0');
+					$(this).find('.check').removeClass('fa-pencil-square-o');
+					$(this).find('.check').addClass('fa-floppy-o');
+				}else {
+					title = $(this).closest('.modal-header').find('.name-modal-edit').val();
+					$(this).closest('.modal-header').find('.modal-title').html(title);
+					$(this).closest('.modal-header').find('.check').removeClass('fa-floppy-o');
+					$(this).closest('.modal-header').find('.check').addClass('fa-pencil-square-o');
+					$(this).closest('.modal-header').attr('data-edit_title_modal','1');
+				}
+			})
 		});
 	</script>
 </html>
