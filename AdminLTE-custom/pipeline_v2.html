@@ -838,8 +838,8 @@
 									<div class="item-attach__content">
 										<div class="name-file custom-wrap">ten-file.png</div>
 										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
-										<div class="desc-file custom-wrap">
-											<textarea class="desctiption-file">Bấm để hiệu chỉnh mô tả ...</textarea>
+										<div class="desc-file custom-wrap" data-edit_desc_file="1">
+											<div class="description-file">Bấm để hiệu chỉnh mô tả ...</div>
 										</div>
 										<div class="action-item custom-wrap custom-default">
 											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
@@ -861,8 +861,8 @@
 									<div class="item-attach__content">
 										<div class="name-file custom-wrap">ten-file.png</div>
 										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
-										<div class="desc-file custom-wrap">
-											<textarea class="desctiption-file">Bấm để hiệu chỉnh mô tả ...</textarea>
+										<div class="desc-file custom-wrap"  data-edit_desc_file="1">
+											<div class="description-file">Bấm để hiệu chỉnh mô tả ...</div>
 										</div>
 										<div class="action-item custom-wrap custom-default">
 											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
@@ -1601,7 +1601,21 @@
 					$(this).closest('.modal-header').find('.check').addClass('fa-pencil-square-o');
 					$(this).closest('.modal-header').attr('data-edit_title_modal','1');
 				}
-			})
+			});
+			$('body').on('click','*[data-edit_desc_file]', function(e){
+				var data = $(this).attr('data-edit_desc_file');
+				if(data == 1) {
+					description_file = $(this).find('.description-file').val();
+					alert(description_file);
+					html = '<textarea class="description-file">'+description_file+'</textarea>';
+					$(this).html(html);
+					$(this).attr('data-edit_desc_file','0');
+				}else {
+					$(this).attr('data-edit_desc_file','0');
+					html = '<div class="description-file">'+description_file+'</div>';
+					$(this).html(html);
+				}
+			});
 		});
 	</script>
 </html>
