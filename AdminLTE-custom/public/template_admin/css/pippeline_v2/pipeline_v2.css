@@ -510,6 +510,12 @@
     .edit-deal .comfirm-action__chose a:last-child {
       margin-left: 20px; }
 
+.table-item .box-content .background-image {
+  height: 60px;
+  margin-bottom: 10px; }
+  .table-item .box-content .background-image img {
+    object-fit: cover; }
+
 .changer-background {
   position: absolute;
   top: -62px;
