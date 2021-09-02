@@ -1,0 +1,16 @@
+.calendar-content {
+	.form-events {
+		&__title {
+			font-size: 18px;
+		}
+		&__content {
+			.form-group {
+				text-align: right;
+
+			}
+		}
+	}
+	.col-md-9 {
+		border-left: 1px solid #ddd;
+	}
+}

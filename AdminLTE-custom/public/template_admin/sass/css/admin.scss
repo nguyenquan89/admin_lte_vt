@@ -1,0 +1,33 @@
+$color_main: #dd4b39;
+.custom-default {
+	display: flex;
+	flex-wrap: wrap;
+}
+.custom-wrap {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.fixed-mobile {
+	visibility: hidden;
+	opacity: 0;
+}
+.config-action-fullpage {
+	position: fixed;
+	bottom: 65px;
+	right: 25px;
+	background: rgba(0,0,0,.5);
+	padding: 5px;
+	border-radius: 5px;
+}
+@import './_base/_admin_lte.scss';
+@import './_base/_all_skins.scss';
+@import './_base/_select2.scss';
+@import './_base/_floating_labels.scss';
+@import './_base/_fastselect.scss';
