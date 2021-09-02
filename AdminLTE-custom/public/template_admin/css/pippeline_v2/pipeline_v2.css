@@ -174,7 +174,11 @@
       cursor: pointer;
       transition: all 0.6s; }
     .edit-deal__task .item-task .action-task .remind {
-      background: #f0ad4e; }
+      background: #f0ad4e;
+      padding: 2px 3px;
+      position: absolute;
+      top: 1px;
+      left: -25px; }
       .edit-deal__task .item-task .action-task .remind:hover {
         background: #eccc9e; }
     .edit-deal__task .item-task .action-task .edit {
@@ -254,7 +258,8 @@
           margin-right: 5px;
           font-size: 12px;
           cursor: pointer;
-          transition: all 0.6s; }
+          transition: all 0.6s;
+          font-weight: 600; }
           .edit-deal__attach-content .item-attach__content .action-item .list i {
             margin-right: 3px; }
         .edit-deal__attach-content .item-attach__content .action-item .download, .edit-deal__attach-content .item-attach__content .action-item .comment {
@@ -453,10 +458,21 @@
         margin-top: 5px; }
         .edit-deal .modal-body__sitebar .sitebar-content__general .complete-icon, .edit-deal .modal-body__sitebar .sitebar-content__general .enddate-icon {
           width: 20px;
-          float: left; }
+          float: left;
+          font-size: 16px; }
         .edit-deal .modal-body__sitebar .sitebar-content__general .complete-text, .edit-deal .modal-body__sitebar .sitebar-content__general .enddate-text {
           width: calc(100% - 20px);
           float: right; }
+      .edit-deal .modal-body__sitebar .sitebar-content__general .complete {
+        cursor: pointer; }
+      .edit-deal .modal-body__sitebar .sitebar-content__general .show-enddate {
+        margin-top: 5px;
+        background: #cd0000;
+        color: #fff; }
+        .edit-deal .modal-body__sitebar .sitebar-content__general .show-enddate p {
+          padding: 5px; }
+        .edit-deal .modal-body__sitebar .sitebar-content__general .show-enddate i {
+          margin: 0 5px; }
 .edit-deal .deal-activity {
   margin-top: 1px solid #ddd;
   background: #f5f5f5; }
@@ -637,6 +653,12 @@
       right: 0;
       color: #3e3e3e;
       opacity: 0; }
+
+.image-remind {
+  width: 15px;
+  height: 15px;
+  filter: invert(1);
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg); }
 
 @media only screen and (min-width: 1920px) {
   body {

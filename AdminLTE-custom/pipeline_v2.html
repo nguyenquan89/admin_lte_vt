@@ -852,7 +852,9 @@
 									</div>
 								</div>
 								<div class="action-task">
-									<div class="item-action remind"></div>
+									<div class="item-action remind">
+										<img class="image-remind" src="public/template_admin/img/svg/alarm-clock.svg">
+									</div>
 									<div class="item-action edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
 									<div class="item-action delete"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
 								</div>
@@ -868,7 +870,9 @@
 									</div>
 								</div>
 								<div class="action-task">
-									<div class="item-action remind"></div>
+									<div class="item-action remind">
+										<img class="image-remind" src="public/template_admin/img/svg/alarm-clock.svg">
+									</div>
 									<div class="item-action edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
 									<div class="item-action delete"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
 								</div>
@@ -1066,7 +1070,9 @@
 	          					</div>
 	          					<div class="sitebar-content__action-content action custom-wrap">
 	          						<div class="action-remind action-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_remind">
-	          							<div class="icon"></div>
+	          							<div class="icon">
+	          								<img class="image-remind" src="public/template_admin/img/svg/alarm-clock.svg">
+	          							</div>
 	          							<div class="text">Nhắc việc</div>
 	          						</div>
 	          						<div class="action-move_copy action-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_deal_move_copy">
@@ -1093,13 +1099,20 @@
 	          				</div>
 	          				<div class="sitebar-content__general custom-wrap">
 	          					<div class="sitebar-content__general-content custom-wrap">
-	          						<div class="complete custom-wrap custom-default">
-	          							<div class="complete-icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+	          						<div class="complete custom-wrap custom-default" data-complete="1">
+	          							<div class="complete-icon"><i class="check fa fa-square-o" aria-hidden="true"></i></div>
 	          							<div class="complete-text">Hoàn thành</div>
 	          						</div>
 	          						<div class="enddate custom-wrap custom-default">
 	          							<div class="enddate-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-	          							<div class="enddate-text">Ngày hoàn thành</div>
+	          							<div class="enddate-text">Ngày kết thúc</div>
+	          						</div>
+	          						<div class="show-enddate">
+	          							<p>
+	          								<span>2/9</span>
+	          								<span><i class="fa fa-long-arrow-right"></i></span>
+	          								<span>Hôm qua</span>
+	          							</p>
 	          						</div>
 	          					</div>
 	          				</div>
@@ -1567,7 +1580,7 @@
 	    					</div>
 						</div>
 					`;
-					$(this).closest('.table-content').append(html);
+					$(this).closest('.table-content').prepend(html);
 				}
 				reloadDrag();
 			});
@@ -1749,6 +1762,19 @@
 					});
 				}
 			});
+			//tick complete
+			$('body').on('click', '*[data-complete]', function(e){
+				data = $(this).attr('data-complete');
+				if(data == 1) {
+					$(this).attr('data-complete',0);
+					$(this).find('.check').addClass('fa-check-square-o');
+					$(this).find('.check').removeClass('fa-square-o');
+				}else {
+					$(this).attr('data-complete',1);
+					$(this).find('.check').addClass('fa-square-o');
+					$(this).find('.check').removeClass('fa-check-square-o');
+				}
+			});
 			// delete all file selected
 			$('body').on('click', '*[data-delete_all_select]', function(e){
 				$('.edit-deal__attach .item-attach').each(function(){
@@ -1787,7 +1813,7 @@
 					$(this).closest('.modal-header').find('.modal-title').html(title);
 					$(this).closest('.modal-header').find('.check').removeClass('fa-floppy-o');
 					$(this).closest('.modal-header').find('.check').addClass('fa-pencil-square-o');
-					$(this).closest('.modal-header').attr('data-edit_title_modal','1');
+					$(this).closest('.modal-header').find('.icon-edit').attr('data-edit_title_modal','1');
 				}
 			});
 			$('body').on('click','*[data-edit_desc_file]', function(e){
