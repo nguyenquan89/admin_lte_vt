@@ -286,6 +286,7 @@ $color_main: #dd4b39;
 					.desc-file {
 						margin-top: 10px;
 						margin-bottom: 10px;
+						position: relative;
 						.description-file {
 							width: 100%;
 							border: none;
@@ -295,6 +296,33 @@ $color_main: #dd4b39;
 							color: #ddd;
 							font-size: 12px;
 							font-style: initial;
+							.content-file {
+								width:100%;
+								border:1px solid #ddd; 
+								outline:none;
+								color: #3e3e3e;
+							}
+						}
+						.btn-edit {
+							position: absolute;
+							top: 0px;
+							right: 2px;
+							font-size: 20px;
+							padding: 0px 5px;
+							z-index: 9999;
+							cursor: pointer;
+							color: #5cb85c;
+							opacity: 0;
+							visibility: hidden;
+							&:hover {
+								color: #95c795;
+							}
+						}
+						&:hover {
+							.btn-edit {
+								opacity: 1;
+								visibility: visible;
+							}
 						}
 					}
 					.action-item {
@@ -680,3 +708,92 @@ $color_main: #dd4b39;
 		}
 	}
 }
+.changer-background {
+	position: absolute;
+	top: -62px;
+	right: 0;
+	.set-background {
+		margin-right: 10px;
+		border: 1px solid #ddd;
+	    background-color: #f4f4f4;
+	    color: #3e3e3e;
+	    font-weight: 600;
+	    position: relative;
+	    i {
+	    	margin-right: 3px;
+	    }
+	    .background-list {
+	    	right: 10px;
+	    	ul {
+	    		width: 315px;
+	    		li {
+	    			width: 100px;
+					height: 80px;
+					margin-top: 5px;
+					img {
+						width: 100%;
+						height: 100%;
+						display: block;
+						margin: auto;
+						object-fit: cover;
+					}
+	    		}
+	    	}
+	    }
+	}
+	.set-color-bg {
+		position: relative;
+		.color-list {
+			right: 0;
+			ul {
+				width: 145px;
+				li {
+					
+					
+					font-size: 35px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.background-item {
+		display: none;
+		position: absolute;
+		top: 120%;
+		z-index: 999999;
+		background: #fff;
+		padding: 5px;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px 2px #3e3e3e;
+		-webkit-box-shadow: 0 2px 5px 2px #3e3e3e;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			margin: 0;
+			padding:0;
+			li {
+				margin-right: 4px;
+				list-style-type: none;
+				display: inline-block;
+				&:nth-child(4n+4) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:1920px) {
+	body {
+		max-height: 100vh!important;
+	}
+}
+@media only screen and (min-width:1366px) {
+	body {
+		max-height: 100vh!important;
+		overflow: hidden;
+	}
+}
+

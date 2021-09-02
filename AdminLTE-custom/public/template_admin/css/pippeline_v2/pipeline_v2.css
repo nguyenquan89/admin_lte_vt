@@ -212,7 +212,8 @@
         color: #ddd; }
       .edit-deal__attach-content .item-attach__content .desc-file {
         margin-top: 10px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
         .edit-deal__attach-content .item-attach__content .desc-file .description-file {
           width: 100%;
           border: none;
@@ -222,6 +223,27 @@
           color: #ddd;
           font-size: 12px;
           font-style: initial; }
+          .edit-deal__attach-content .item-attach__content .desc-file .description-file .content-file {
+            width: 100%;
+            border: 1px solid #ddd;
+            outline: none;
+            color: #3e3e3e; }
+        .edit-deal__attach-content .item-attach__content .desc-file .btn-edit {
+          position: absolute;
+          top: 0px;
+          right: 2px;
+          font-size: 20px;
+          padding: 0px 5px;
+          z-index: 9999;
+          cursor: pointer;
+          color: #5cb85c;
+          opacity: 0;
+          visibility: hidden; }
+          .edit-deal__attach-content .item-attach__content .desc-file .btn-edit:hover {
+            color: #95c795; }
+        .edit-deal__attach-content .item-attach__content .desc-file:hover .btn-edit {
+          opacity: 1;
+          visibility: visible; }
       .edit-deal__attach-content .item-attach__content .action-item {
         position: relative; }
         .edit-deal__attach-content .item-attach__content .action-item .list {
@@ -488,4 +510,69 @@
     .edit-deal .comfirm-action__chose a:last-child {
       margin-left: 20px; }
 
-/*# sourceMappingURL=pipeline_v2.css.map */
+.changer-background {
+  position: absolute;
+  top: -62px;
+  right: 0; }
+  .changer-background .set-background {
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    color: #3e3e3e;
+    font-weight: 600;
+    position: relative; }
+    .changer-background .set-background i {
+      margin-right: 3px; }
+    .changer-background .set-background .background-list {
+      right: 10px; }
+      .changer-background .set-background .background-list ul {
+        width: 315px; }
+        .changer-background .set-background .background-list ul li {
+          width: 100px;
+          height: 80px;
+          margin-top: 5px; }
+          .changer-background .set-background .background-list ul li img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            object-fit: cover; }
+  .changer-background .set-color-bg {
+    position: relative; }
+    .changer-background .set-color-bg .color-list {
+      right: 0; }
+      .changer-background .set-color-bg .color-list ul {
+        width: 145px; }
+        .changer-background .set-color-bg .color-list ul li {
+          font-size: 35px;
+          cursor: pointer; }
+  .changer-background .background-item {
+    display: none;
+    position: absolute;
+    top: 120%;
+    z-index: 999999;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 2px #3e3e3e;
+    -webkit-box-shadow: 0 2px 5px 2px #3e3e3e; }
+    .changer-background .background-item ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .changer-background .background-item ul li {
+        margin-right: 4px;
+        list-style-type: none;
+        display: inline-block; }
+        .changer-background .background-item ul li:nth-child(4n+4) {
+          margin-right: 0; }
+
+@media only screen and (min-width: 1920px) {
+  body {
+    max-height: 100vh !important; } }
+@media only screen and (min-width: 1366px) {
+  body {
+    max-height: 100vh !important;
+    overflow: hidden; } }

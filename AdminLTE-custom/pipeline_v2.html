@@ -237,25 +237,42 @@
 	    		</div>
 	    	</div>
 	    	<div class="pipelines-content bg-navy custom-wrap custom-default" >
-	    		<div class="changer-background" data-background_pipelines="bg-navy">
-	    			<a href="javascript:;" class="btn btn-success"><i class="fa fa-cog"></i> Đổi màu nền</a>
-	    			<div class="changer-background__list">
-	    				<ul class="custom-wrap">
-	    					<li><a class="text-aqua" data-color="bg-aqua"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-blue" data-color="bg-blue"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-light-blue" data-color="bg-light-blue"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-teal" data-color="bg-teal"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-yellow" data-color="bg-yellow"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-orange" data-color="bg-orange"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-green" data-color="bg-green"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-lime" data-color="bg-lime"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-red" data-color="bg-red"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-purple" data-color="bg-purple"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-fuchsia" data-color="bg-fuchsia"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-muted" data-color="bg-muted"><i class="fa fa-square"></i></a></li>
-		                  	<li><a class="text-navy" data-color="bg-navy"><i class="fa fa-square"></i></a></li>
-	    				</ul>
+	    		<div class="changer-background" >
+	    			<div class="btn set-background" data-background="public/template_admin/img/background/background-1.jpg"><i class="fa fa-cog"></i>Thay ảnh background
+	    				<div class="background-list background-item">
+		    				<ul class="custom-wrap">
+		    					<li data-set_bg="2" data-bg="public/template_admin/img/background/background-1.jpg">
+		    						<img src="public/template_admin/img/background/background-1.jpg">
+		    					</li>
+			                  	<li data-set_bg="2" data-bg="public/template_admin/img/background/background-2.jpg">
+			                  		<img src="public/template_admin/img/background/background-2.jpg">
+			                  	</li>
+			                  	<li data-set_bg="2" data-bg="public/template_admin/img/background/background-3.png">
+			                  		<img src="public/template_admin/img/background/background-3.png">
+			                  	</li>
+		    				</ul>
+		    			</div>
 	    			</div>
+	    			<div class="btn btn-success set-color-bg" data-background_color="bg-navy"><i class="fa fa-cog"></i> Thay màu nền
+	    				<div class="color-list background-item">
+		    				<ul class="custom-wrap">
+		    					<li><a class="text-aqua" data-set_bg="1" data-bg="bg-aqua"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-blue" data-set_bg="1" data-bg="bg-blue"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-light-blue" data-set_bg="1" data-bg="bg-light-blue"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-teal" data-set_bg="1" data-bg="bg-teal"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-yellow" data-set_bg="1" data-bg="bg-yellow"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-orange" data-set_bg="1" data-bg="bg-orange"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-green" data-set_bg="1" data-bg="bg-green"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-lime" data-set_bg="1" data-bg="bg-lime"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-red" data-set_bg="1" data-bg="bg-red"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-purple" data-set_bg="1" data-bg="bg-purple"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-fuchsia" data-set_bg="1" data-bg="bg-fuchsia"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-muted" data-set_bg="1" data-bg="bg-muted"><i class="fa fa-square"></i></a></li>
+			                  	<li><a class="text-navy" data-set_bg="1" data-bg="bg-navy"><i class="fa fa-square"></i></a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    			
 	    		</div>
 	    		<div class="pipelines-content__table custom-wrap">
 	    			<div class="table-content" id="container_drop">
@@ -838,8 +855,9 @@
 									<div class="item-attach__content">
 										<div class="name-file custom-wrap">ten-file.png</div>
 										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
-										<div class="desc-file custom-wrap" data-edit_desc_file="1">
+										<div class="desc-file custom-wrap">
 											<div class="description-file">Bấm để hiệu chỉnh mô tả ...</div>
+											<div class="btn-edit" title="Click để sửa" data-edit_desc_file="1"><i class="fa fa-pencil-square-o check"></i></div>
 										</div>
 										<div class="action-item custom-wrap custom-default">
 											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
@@ -861,8 +879,9 @@
 									<div class="item-attach__content">
 										<div class="name-file custom-wrap">ten-file.png</div>
 										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
-										<div class="desc-file custom-wrap"  data-edit_desc_file="1">
+										<div class="desc-file custom-wrap"  >
 											<div class="description-file">Bấm để hiệu chỉnh mô tả ...</div>
+											<div class="btn-edit" title="Click để sửa" data-edit_desc_file="1"><i class="fa fa-pencil-square-o check"></i></div>
 										</div>
 										<div class="action-item custom-wrap custom-default">
 											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
@@ -1359,26 +1378,33 @@
 				`;
 				$(this).closest('.info-name').html(html);
 			});
-			setTimeout(function(){
-				$(".table-content").each(function(){
-					var box_height = $('.table-item__box').height();
-					var height_fix = 120;
-					height = Number(box_height)+height_fix;
-					// $(this).find('.table-item').css('height',height+'px');
-				});
-			},3000);
+			
 			// Changer Background pipelines-content
-			$('body').on('click','*[data-background_pipelines]', function(e) {
+			$('body').on('click','*[data-background]', function(e) {
 				e.preventDefault();
-				$(this).find('.changer-background__list').slideToggle();
+				$(this).find('.background-list').slideToggle();
 			});
-			$('body').on('click','*[data-color]', function(e) {
+			$('body').on('click','*[data-background_color]', function(e) {
 				e.preventDefault();
-				var color_new = $(this).data('color');
-				var color_old = $(this).closest('.changer-background').data('background_pipelines');
-				$(this).closest('.pipelines-content').removeClass(color_old);
-				$(this).closest('.pipelines-content').addClass(color_new);
-				$(this).closest('.changer-background').data('background_pipelines',color_new);
+				$(this).find('.color-list').slideToggle();
+			});
+			$('body').on('click','*[data-bg]', function(e) {
+				e.preventDefault();
+				var data_new = $(this).data('bg');
+				var set_bg = $(this).attr('data-set_bg');
+				if(set_bg == 1) {
+					data_old = $(this).closest('.set-color-bg').attr('data-background_color');
+					$(this).closest('.pipelines-content').removeClass(data_old);
+					$(this).closest('.pipelines-content').addClass(data_new);
+					$(this).closest('.set-color-bg').attr('data-background_color',data_new);
+					$(this).closest('.pipelines-content').css('background','url()');
+				}else {
+					data_old = $(this).closest('.set-background').attr('data-background');
+					$(this).closest('.pipelines-content').css('background','url()');
+					$(this).closest('.pipelines-content').css('background','url('+data_new+')');
+					$(this).closest('.set-background').attr('data-background',data_new);
+				}
+				
 			});
 		});
 		$(document).ready(function() {
@@ -1605,15 +1631,47 @@
 			$('body').on('click','*[data-edit_desc_file]', function(e){
 				var data = $(this).attr('data-edit_desc_file');
 				if(data == 1) {
-					description_file = $(this).find('.description-file').val();
-					alert(description_file);
-					html = '<textarea class="description-file">'+description_file+'</textarea>';
-					$(this).html(html);
+					description_file = $(this).closest('.desc-file').find('.description-file').html();
+					html = '<textarea class="content-file">'+description_file+'</textarea>';
+					$(this).closest('.desc-file').find('.description-file').html(html)
 					$(this).attr('data-edit_desc_file','0');
+					$(this).find('.check').removeClass('fa-pencil-square-o');
+					$(this).find('.check').addClass('fa-floppy-o');
 				}else {
-					$(this).attr('data-edit_desc_file','0');
-					html = '<div class="description-file">'+description_file+'</div>';
-					$(this).html(html);
+					$(this).attr('data-edit_desc_file','1');
+					description_file_edit = $(this).closest('.desc-file').find('.content-file').val();
+					$(this).closest('.desc-file').find('.description-file').html(description_file_edit);
+					$(this).find('.check').removeClass('fa-floppy-o');
+					$(this).find('.check').addClass('fa-pencil-square-o');
+				}
+			});
+			//set auto height table-item
+			setInterval (function(){
+				$(".table-content .table-item").each(function(){
+					var box_height = $(this).find('.table-item__box').height();
+					var height_fix = 120;
+					height = Number(box_height)+height_fix;
+					$(this).css('height',height+'px');
+				});
+			},300);
+			setInterval (function(){
+				var width_screen = screen.availWidth;
+				if(width_screen == 1920) {
+					$('body').find('.pipelines-content').find('.table-item__box').css('max-height','555px');
+				}else if(width_screen == 1366) {
+					$('body').find('.pipelines-content').find('.table-item__box').css('max-height','230px');
+				}
+			},300);
+			//full screen box pipeline
+			$('body').on('click','*[data-full_srceen]', function(e){
+				var data = $(this).attr('data-full_srceen');
+				if(data == 1) {
+					$(this).attr('data-full_srceen',0);
+					$(this).closest('.content-wrapper').find('.content-header').css('display','none');
+					$(this).closest('.sidebar-mini').find('.sidebar-toggle').trigger();
+				}else {
+					$(this).attr('data-full_srceen',1);
+					$(this).closest('.content-wrapper').find('.content-header').css('display','block');
 				}
 			});
 		});
