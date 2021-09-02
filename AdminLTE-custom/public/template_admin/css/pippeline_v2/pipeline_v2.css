@@ -582,3 +582,6 @@
   body {
     max-height: 100vh !important;
     overflow: hidden; } }
+@media (min-width: 768px) and (max-width: 1190px) {
+  .edit-deal .modal-content {
+    width: 100% !important; } }
