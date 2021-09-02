@@ -821,8 +821,13 @@
 		          						</div>
 		          					</div>
 		          					<div class="label-color top custom-wrap custom-default">
-	          							<div class="color" style="background: green;"></div>
+	          							<div class="color"></div>
 	          						</div>
+		          				</div>
+		          				<div class="box-video top custom-wrap custom-default">
+		          					<div class="box-video__content custom-wrap">
+		          						<iframe width="" height="" src="https://www.youtube.com/embed/uwTda2vXrO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		          					</div>
 		          				</div>
 		          				<div class="form-group top custom-wrap custom-default">
 		          					<label class="custom-wrap" style="font-size: 16px;">Ghi chú</label>
@@ -875,6 +880,30 @@
 								Tệp tin đính kèm
 							</div>
 							<div class="edit-deal__attach-content custom-wrap wrap">
+								<div class="item-attach custom-wrap custom-default">
+									<div class="item-attach__image">
+										<div class="image">
+											<img src="public/template_admin/img/background/background-1.jpg">
+										</div>
+									</div>
+									<div class="item-attach__content">
+										<div class="name-file custom-wrap">ten-file.png</div>
+										<div class="info-creator custom-wrap">vuongtuan22 đã tạo vào 28 tháng 6</div>
+										<div class="desc-file custom-wrap">
+											<div class="description-file">Bấm để hiệu chỉnh mô tả ...</div>
+											<div class="btn-edit" title="Click để sửa" data-edit_desc_file="1"><i class="fa fa-pencil-square-o check"></i></div>
+										</div>
+										<div class="action-item custom-wrap custom-default">
+											<div class="list download"><i class="fa fa-download" aria-hidden="true"></i>Dowload</div>
+											<div class="list image-bg"><i class="fa fa-television" aria-hidden="true"></i>Bỏ hình bìa</div>
+											<div class="list delete"><i class="fa fa-trash-o" aria-hidden="true"></i>Xóa</div>
+											<div class="list comment"><i class="fa fa-comments-o" aria-hidden="true"></i>Comment</div>
+										</div>
+									</div>
+									<div class="check-attach" data-check_attach="1">
+										<i class="fa fa-check-square check" aria-hidden="true"></i>
+									</div>
+								</div>
 								<div class="item-attach custom-wrap custom-default">
 									<div class="item-attach__image">
 										<div class="image">
@@ -1009,7 +1038,7 @@
 	          							<div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
 	          							<div class="text">Contact</div>
 	          						</div>
-	          						<div class="add-label add-sitebar-item custom-wrap custom-default">
+	          						<div class="add-label add-sitebar-item custom-wrap custom-default" data-toggle="modal" data-target="#edit_add_label">
 	          							<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
 	          							<div class="text">Nhãn</div>
 	          						</div>
@@ -1279,13 +1308,41 @@
 	          	</div>
 	          	<div class="modal-body">
 	          		<div class="form-group contact-deal">
-      					<label class="custom-wrap">Thành viên của bảng</label>
-	                  	<select class="multipleSelect" multiple name="language">
-						    <option value="Bangladesh">Bangladesh</option>
-						    <option selected value="Barbados">Barbados</option>
-						    <option selected value="Belarus">Belarus</option>
-						    <option value="Belgium">Belgium</option>
-						</select>
+      					<form class="custom-wrap form-seach-contact">
+      						<input class="custom-wrap" type="text" name="name_contact" placeholder="Tìm kiếm các thành viên">
+      					</form>
+	                </div>
+	                <div class="form-group title">
+	                	Thành viên của bảng
+	                </div>
+	                <div class="form-group list-contact-modal">
+	                	<div class="item-contact custom-wrap custom-default" data-check_user="1">
+	                		<div class="item-contact__image" data-id_user="1" data-image_user="public/template_admin/img/avatar04.png">
+	                			<img src="public/template_admin/img/avatar04.png">
+	                		</div>
+	                		<div class="item-contact__info">
+	                			<p class="name">Tuan (tuan640)</p>
+	                		</div>
+	                		<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                	</div>
+	                	<div class="item-contact custom-wrap custom-default" data-check_user="1">
+	                		<div class="item-contact__image" data-id_user="2" data-image_user="public/template_admin/img/avatar1.png">
+	                			<img src="public/template_admin/img/avatar04.png">
+	                		</div>
+	                		<div class="item-contact__info">
+	                			<p class="name">Tuan (tuan640)</p>
+	                		</div>
+	                		<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                	</div>
+	                	<div class="item-contact custom-wrap custom-default" data-check_user="1">
+	                		<div class="item-contact__image" data-id_user="3" data-image_user="public/template_admin/img/avatar3.png">
+	                			<img src="public/template_admin/img/avatar04.png">
+	                		</div>
+	                		<div class="item-contact__info">
+	                			<p class="name">Tuan (tuan640)</p>
+	                		</div>
+	                		<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                	</div>
 	                </div>
 	          	</div>
 	        </div>
@@ -1314,7 +1371,43 @@
 	        </div>
 	    </div>
     </div>
-
+    <div class="modal fade" id="edit_add_label">
+    	<div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header">
+	            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              	<span aria-hidden="true">&times;</span></button>
+	            	<h4 class="modal-title"><i class="fa fa-tags"></i>Tạo nhãn</h4>
+	          	</div>
+	          	<div class="modal-body">
+	          		<div class="label-content custom-wrap">
+	                  	<div class="list-label custom-wrap custom-default" data-label_new data-label_old="bg-aqua">
+	                  		<div class="item-label bg-aqua" data-check_label="0" data-label_color="bg-aqua">
+	                  			<div class="check-label"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                  		</div>
+	                  		<div class="item-label bg-blue" data-check_label="0" data-label_color="bg-blue">
+	                  			<div class="check-label"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                  		</div>
+	                  		<div class="item-label bg-yellow" data-check_label="0" data-label_color="bg-yellow">
+	                  			<div class="check-label"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                  		</div>
+	                  		<div class="item-label bg-green" data-check_label="0" data-label_color="bg-green">
+	                  			<div class="check-label"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                  		</div>
+	                  		<div class="item-label bg-red" data-check_label="0" data-label_color="bg-red">
+	                  			<div class="check-label"><i class="fa fa-check" aria-hidden="true"></i></div>
+	                  		</div>
+	                  	</div>
+	                </div>
+	          	</div>
+	          	<div class="modal-footer">
+	          		<div class="save-modal">
+	          			<div class="btn-save" data-add_label>Tạo</div>
+	          		</div>
+	          	</div>
+	        </div>
+	    </div>
+    </div>
     <div class="modal fade" id="edit_deal_move_copy">
     	<div class="modal-dialog">
 	        <div class="modal-content">
@@ -1594,6 +1687,34 @@
 					$(this).find('.check').addClass('fa-check-square');
 				}
 			});
+			// select label for deal
+			$('body').on('click', '*[data-check_label]', function(e){
+				data_check = $(this).attr('data-check_label');
+				label = $(this).attr('data-label_color');
+				$(this).closest('.list-label').each(function(){
+					$(this).find('.check-label').css('opacity',0);
+					$(this).find('.item-label').attr('data-check_label',0);
+				});
+				if(data_check == 0) {
+					$(this).attr('data-check_label',1);
+					$(this).find('.check-label').css('opacity',1);
+					$(this).closest('.list-label').attr('data-label_new',label);
+				}else {
+					$(this).attr('data-check_label',0);
+					$(this).find('.check-label').css('opacity',0);
+					$(this).closest('.list-label').attr('data-label_new','');
+				}
+			});
+			// add label
+			$('body').on('click','*[data-add_label]', function(e){
+				label_old = $(this).closest('#edit_add_label').find('.list-label').attr('data-label_old');
+				label = $(this).closest('#edit_add_label').find('.list-label').attr('data-label_new');
+				console.log(label);
+				$(this).closest('.sidebar-mini').find('.edit-deal').find('.contact-person').find('.label-color').find('.color').addClass(label);
+				$(this).closest('.sidebar-mini').find('.edit-deal').find('.contact-person').find('.label-color').find('.color').removeClass(label_old);
+				$(this).closest('#edit_add_label').find('.list-label').attr('data-label_old',label);
+				$(this).closest('#edit_add_label').find('.close').triggerHandler('click');
+			});
 			// tick check select all file
 			$('body').on('click', '*[data-select_all]', function(e){
 				data = $(this).attr('data-select_all');
@@ -1603,6 +1724,18 @@
 						$('.item-attach').find('.check').addClass('fa-check-square');
 						$('.item-attach').find('.check-attach').attr('data-check_attach','0');
 					});
+				}
+			});
+
+			//show tick select contact
+			$('body').on('click','*[data-check_user]', function(e){
+				data = $(this).attr('data-check_user');
+				if(data == 1) {
+					$(this).find('.check').css('opacity',1);
+					$(this).attr('data-check_user',0);
+				}else {
+					$(this).find('.check').css('opacity',0);
+					$(this).attr('data-check_user',1);
 				}
 			});
 			// uncheck all file
@@ -1618,11 +1751,11 @@
 			});
 			// delete all file selected
 			$('body').on('click', '*[data-delete_all_select]', function(e){
-				$(this).closest('.edit-deal__attach').each(function(){
-					data_check_attach = $('.item-attach').find('.check-attach').attr('data-check_attach');
+				$('.edit-deal__attach .item-attach').each(function(){
+					data_check_attach = $(this).find('.check-attach').attr('data-check_attach');
+					console.log(data_check_attach);
 					if(data_check_attach == 1) {
-						$('.item-attach').addClass('item-attach_'+data_check_attach);
-						$(this).find('.item-attach_'+data_check_attach).remove();
+						$(this).remove();
 					}
 				});
 			});

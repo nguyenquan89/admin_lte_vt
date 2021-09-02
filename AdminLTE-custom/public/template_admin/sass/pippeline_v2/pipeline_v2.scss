@@ -162,6 +162,14 @@ $color_main: #dd4b39;
     				margin-left: 20px;
 				}
 			}
+			.box-video {
+				&__content {
+					iframe {
+						width: 100%;
+						height: 308px;
+					}
+				}
+			}
 			.notes {
 				padding-left: 10px;
 				padding-top: 10px;
@@ -708,6 +716,7 @@ $color_main: #dd4b39;
 		}
 	}
 }
+
 .table-item {
 	.box-content {
 		.background-image {
@@ -715,6 +724,28 @@ $color_main: #dd4b39;
 			margin-bottom: 10px;
 			img {
 				object-fit: cover;
+			}
+		}
+	}
+}
+#edit_add_label {
+	.label-content {
+		.list-label {
+			.item-label {
+				width: 80px;
+				height: 30px;
+				display: inline-block;
+				margin-right: 10px;
+				cursor: pointer;
+				margin-bottom: 10px;
+				position: relative;
+				.check-label {
+					position: absolute;
+					left: 5px;
+					top: 0;
+					font-size: 15px;
+					opacity: 0;
+				}
 			}
 		}
 	}
@@ -791,6 +822,65 @@ $color_main: #dd4b39;
 				&:nth-child(4n+4) {
 					margin-right: 0;
 				}
+			}
+		}
+	}
+}
+#edit_deal_user {
+	.contact-deal {
+		.form-seach-contact {
+			input {
+				width: 100%;
+				height: 35px;
+				padding-left: 10px;
+				border-radius: 3px;
+				border: 1px solid #ddd;
+			}
+		}
+	}
+	.title {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.list-contact-modal {
+		max-height: 450px;
+		overflow: auto;
+		.item-contact {
+			margin-bottom: 10px;
+			position: relative;
+			background: #f5f5f5;
+			padding: 5px;
+			cursor: pointer;
+			&__image {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				overflow: hidden;
+				float: left;
+				img {
+					object-fit: contain;
+				}
+			}
+			&__info {
+				width: calc(100% - 80px);
+				float: right;
+				position: relative;
+				padding-left: 30px;
+				.name {
+					font-weight: 600;
+					font-size: 15px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 30px;
+				}
+			}
+			.check {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #3e3e3e;
+				opacity: 0;
 			}
 		}
 	}
