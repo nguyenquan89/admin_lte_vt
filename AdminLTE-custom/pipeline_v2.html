@@ -1539,7 +1539,6 @@
 					$(this).closest('.pipelines-content').css('background','url('+data_new+')');
 					$(this).closest('.set-background').attr('data-background',data_new);
 				}
-				
 			});
 		});
 		$(document).ready(function() {
@@ -1581,6 +1580,7 @@
 						</div>
 					`;
 					$(this).closest('.table-content').prepend(html);
+					$('.add-item input[name="title_name"]').val('');
 				}
 				reloadDrag();
 			});
